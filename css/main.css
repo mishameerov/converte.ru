@@ -1,0 +1,267 @@
+/*
+  960 Grid System ~ Text CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+  font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+  font-size: 24px
+  line-height: 20px;
+  background: #6f1e14;
+  color: #333;
+  padding-bottom: 20px;
+  background-image: url(../img/charcoal.png)
+}
+
+hr {
+  border: 0 solid #ccc;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+  font-family: 'Philosopher', sans-serif;
+  color: #fff;
+  padding-top: 20px;
+  text-align: center;
+  line-height: 80px;
+  text-transform:uppercase;
+  color: rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+
+h2 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  padding-top: 10px;
+  text-align: center;
+  text-shadow: 0px 4px 5px rgba(0,0,0,0.4);
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px;
+}
+
+.spacing{
+letter-spacing:0.25em;
+}
+
+/* `Container Params
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+  background-image: url(../img/glow.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+
+/* Text styles
+----------------------------------------------------------------------------------------------------*/
+
+//*artifact from demo.css*//
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+//*artificial from demo.css*//
+p {
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+
+abbr{
+    border-bottom: 1px;
+	border-bottom-style: dotted;
+}
+   
+.nav {
+	display: inline;
+	margin-bottom:100px;
+}
+
+.nav ul{
+
+	display: inline;
+	list-style: none;
+}
+
+.nav ul li{
+	float: left;
+	display: inline;
+	font-size: 24px;
+	font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+	font-style: normal;
+	color: #fff;
+	text-shadow: 1px 2px 1px rgba(0,0,0,0.7);
+}
+
+.nav ul li a{
+	display:inline;
+	text-decoration:none;
+	color: #abe1fa;
+	border-bottom-color:#abe1fa;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	padding-bottom: 4px;
+}
+
+.nav ul li a:hover{
+	color: #abe1fa;
+	border-bottom-color:#abe1fa;
+	text-shadow: 0px 0px 10px rgba(255,255,255,0.9);
+}
+
+.nav ul li a:visited{
+	color: #abe1fa;
+	border-bottom-color:#abe1fa;
+}
+
+/* Text fiels
+----------------------------------------------------------------------------------------------------*/
+
+.field{
+	font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+	font-size: 18px; 
+	width: 127px;
+    height: 30px;
+	background: transparent;
+	border: none;
+	text-decoration: none;
+	text-align: right;
+	padding-right: 5px;
+	margin-left: 10px;
+	color: #fff;
+	cursor: pointer
+	
+}
+
+.field:focus{
+	background: #fff;
+	border: inherit;
+	text-decoration: none;
+	color: #000;
+}
+
+.demension{
+	font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+	font-size: 18px;
+	color: #fff;
+}
+
+.values-block{
+	/*border-width: 3px;*/ 	
+	border-style: none; 
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.2);
+}
+
+.container_12{
+	background-color: rgba(56,60,68,1);
+	margin-top: 30px;
+	border-radius: 20px;
+	box-shadow: 0px -20px 10px rgba(255,255,255,0.2);
+	-moz-box-shadow: 0px -20px 10px rgba(255,255,255,0.2);
+    -webkit-box-shadow: 0px 0px 50px rgba(255,255,255,0.2);
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+}
+
+.upper-container{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 50px;
+	border-radius: 0 0 20px 20px;
+	background-color: rgba(120,120,120,1);
+
+}
+
+.bottom-container{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 50px;
+	border-radius: 20px 20px 0 0;
+	background-color: rgba(120,120,120,1);
+
+}
+
+.uppading{
+	padding-top: 10px;
+}
+
+.reallink{
+	color: #2e3192;
+	text-decoration:none;
+	margin-left: 10px;
+	border-bottom-color:#2e3192;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	padding-bottom: 2px;
+}
+
+.reallink:hover{
+	text-decoration:none;
+}
