@@ -1,7 +1,7 @@
 {
 	"len": {
 		"name": "Длина",
-		"flag": true,
+		"default": true,
 		"metric": {
 			"name": "Метрическая система",
 			"km": {
@@ -90,7 +90,27 @@
 		},
 
 		"england": {
-			"foot": "3.2808399",
+			"name": "Английская система",
+			"foot": {
+				"main": true,
+				"factor": "3.2808399",
+				"name": {
+					"nominative-singular": "фут",
+					"genitive-signular": "фута",
+					"genetive-plural": "футов",
+					"additional": null
+				}
+			},
+			"span": {
+				"main": true,
+				"factor": "4.3744532",
+				"name": {
+					"nominative-singular": "спан",
+					"genitive-signular": "спана",
+					"genetive-plural": "спанов",
+					"additional": null
+				}
+			},
 			"span": "4.3744532",
 			"link": "4.9709695",
 			"hand": "9.8425197",

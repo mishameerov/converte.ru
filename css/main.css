@@ -25,6 +25,7 @@ h1 {
   font-family: 'Philosopher', sans-serif;
   color: #fff;
   padding-top: 20px;
+  padding-bottom: 40px;
   text-align: center;
   line-height: 60px;
   font-size: 72px;
@@ -36,7 +37,7 @@ h1 {
 
 h2 {
   font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 24px;
   color: #000;
   padding: 10px 20px 0px;
@@ -149,20 +150,20 @@ abbr{
    
 .nav {
 
-	width: 100%;
 	text-align: center;
+	margin: 0px 30px;
 }
 
 
 .nav_item{
 	float: left;
 	width: 170px;
-	height: 185px;
+	height: 120px;
 
 }
 .icon{
 	width: 170px;
-	height: 150px;
+	height: 85px;
 }
 
 .nav_item .label{
@@ -225,7 +226,6 @@ abbr{
 	border: none;
 	text-decoration: none;
 	text-align: right;
-	padding-right: 5px;
 	margin-left: 30px;
 	color: #000;
 	cursor: pointer
@@ -242,7 +242,7 @@ abbr{
 .demension{
 	font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
 	font-size: 14px;
-	color: #aaa;
+	color: #888;
 }
 
 .values_block{
@@ -252,7 +252,7 @@ abbr{
 	padding-bottom: 20px;
 	padding-top: 1px;
 	border-radius: 10px;
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgba(255,255,255,0.5);
 	text-align: left;
 }
 
@@ -270,8 +270,9 @@ abbr{
 .bottom-container{
 	margin-top: 0px;
 	margin-bottom: 0px;
-	height: 50px;
-	border-radius: 20px 20px 0 0;
+	padding: 0px 20px 5px;
+	height: 30px;
+	border-radius: 20px 20px 0px 0px;
 	background-color: rgba(120,120,120,1);
 
 }
@@ -282,12 +283,12 @@ abbr{
 
 .reallink{
 	color: #2e3192;
-	text-decoration:none;
-	margin-left: 10px;
-	border-bottom-color:#2e3192;
+	text-decoration: none;
+	font-size: 14px;
+	border-bottom-color: rgba(46,49,146,0.5);
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	padding-bottom: 2px;
+	padding-bottom: 1px;
 }
 
 .reallink:hover{
