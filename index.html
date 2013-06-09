@@ -7,13 +7,17 @@
 <!-- ALL STYLE LINKS MUST BE HERE BLYAD! -->
 <link rel="stylesheet" href="./css/reset.css" />
 <link rel="stylesheet" href="./css/main.css" />
-<link rel="stylesheet" href="./css/960_12_col.css" />
+<link rel="stylesheet" href="./css/scrollyeah.min.css" />
 <link href='http://fonts.googleapis.com/css?family=Philosopher:700&subset=cyrillic' rel='stylesheet' type='text/css'>
 
 <!-- ALL LINKS TO SCRIPTS MUST BE HERE! -->
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.5.1'> </script>
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.min.js'> </script>
 <script type='text/javascript' src='./jscript/ui.js'> </script>
 <script type='text/javascript' src='./jscript/convert.js'> </script>
+<script type='text/javascript' src='./jscript/jquery.masonry.min.js'> </script>
+<script type='text/javascript' src='./jscript/scrollyeah.min.js'> </script>
+<script type='text/javascript' src='./jscript/factor.js'> </script>
+
 
 
 
@@ -22,35 +26,74 @@
 <div class="container_12 upper-container" id="upper-container">
  <div class="grid_4 uppading">
  	<a class="reallink spacing" href="#">FAQ</a>
+  <div class=""></div>
  </div>
 </div>
 <!-- end upper -->
 
 <div class="container_12" id="main-container">
-  <h1>
-    <span class="spacing" style="font-size: 36px;" id="top-headline" >Краснознаменный</span>
-    <br />
-    <span class="spacing" style="font-size: 96px;" id="bottom-headline">Конвертер</span>
-  </h1>
-  <div class="grid_12 nav">
-     <ul>
-      <li><a href="#">Температуры</a></li>
-      <li><a href="#">Площади</a></li>
-      <li><a href="#">Объема</a></li>
-      <li>Длины</li>
-      <li><a href="#">Скорости</a></li>
-      <li><a href="#">Веса</a></li>
-      <li><a href="#">Валюты</a></li>
-     </ul>
+  <h1>Конвертер</h1>
+  <div class="nav scrollyeah" data-centerIfFit="true" id="navigation">
+    <div class="nav_item">
+      <a href="" />
+        <div class="icon">
+          <img src="./img/nav_placeholder.gif" />
+        </div>
+        <div class="label">
+          <div class="text">Температура</div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="nav_item">
+        <div class="icon">
+          <img src="./img/nav_placeholder.gif" />
+        </div>
+        <div class="label current">
+          <div class="text">Площадь</div>
+        </div>  
+    </div>
+
+    <div class="nav_item">
+      <a href="" />
+        <div class="icon">
+          <img src="./img/nav_placeholder.gif" />
+        </div>
+        <div class="label">
+          <div class="text">Температура</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="nav_item">
+      <a href="" />
+        <div class="icon">
+          <img src="./img/nav_placeholder.gif" />
+        </div>
+        <div class="label">
+          <div class="text">Температура</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="nav_item">
+      <a href="" />
+        <div class="icon">
+          <img src="./img/nav_placeholder.gif" />
+        </div>
+        <div class="label">
+          <div class="text">Температура</div>
+        </div>
+      </a>
+    </div>
+
   </div>
-  <!-- end .grid_12 -->
   
-  <div class="clear"></div>
-  
-<div class="grid_4 values-block" id="length-metric">
+<div class="values_container" id="values-container"> 
+
+ <div class="values_block" id="length-metric">
 	<h2>Метрическая система</h2>
-    <form action="">
-	<input type="text" class="field" value="0,001" onkeyup="return digCorr(this);" onchange="return digCorr(this);" name="length-metric-km" />
+	<input type="text" class="field" value="0,001" onkeyup="return digCorr(this);" onchange="return digCorr(this);" name="length.metric.km" />
 	<span class="demension">километр</span>
 
 	<input type="text" class="field" value="1" name="length-metric-me" />
@@ -71,11 +114,10 @@
     <input type="text" class="field" value="10000000000" name="length-metric-am" />
 	<span class="demension">ангстрем</span>
 
-    </form> 
   </div>
   <!-- end length-metric -->
 
-  <div class="grid_4 values-block" id="length-britan">
+  <div class="grid_4 values_block" id="length-britan">
 	<h2>Английская система</h2>
     <form action="">
 	<input type="text" class="field" value="0,04167" name="length-britan-league" />
@@ -155,7 +197,7 @@
   <!-- end length-britan -->
 
     
-  <div class="grid_4 values-block" id="length-astro">
+  <div class="grid_4 values_block" id="length-astro">
 	<h2>Астрономические единицы</h2>
     <form action="">
 
@@ -173,11 +215,11 @@
     
     <input type="text" class="field" value="102900000" name="length-astro-lightsecond" />
 	<span class="demension">световая секунда</span>
-</form>
+ </form>
   </div>
   <!-- end length-astro -->
    
-  <div class="grid_4 values-block" id="length-oldrus">
+  <div class="grid_4 values_block" id="length-oldrus">
 	<h2>Страрорусские величины</h2>
     <form action="">
 
@@ -217,10 +259,7 @@
 	</form>
   </div>
   <!-- end length-oldrus -->
-
-<!-- ---------------breaking div --------------- -->
-  <div class="clear"></div>
-<!-- ---------------breaking div --------------- -->
+</div>
 
 </div>
 <!-- end main-container -->
@@ -231,30 +270,6 @@
  </div>
 </div>
 <!-- end bottom-container -->
-
-
-<div id="bebeb">{
-   "length": {	
-      "metric": {
-         "km": 0.001,
-         "m": 1,
-         "dm": 10,
-         "cm": 100,
-         "mm": 1000,
-         "mcm": 1000000,
-         "nm": 1000000000,
-         "am": 10000000000,
-      }
-   }
-      "metric": {
-         "foot": 3,2808399
-         "span": 4,3744532
-         "link": 4,9709695
-         "hand": 9,8425197
-         "palm": 13,12336
-      }
-   }
-}</div>
 
 </body>
 </html>

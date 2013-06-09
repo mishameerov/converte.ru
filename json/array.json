@@ -1,0 +1,100 @@
+{
+	"len": {
+		"name": "Длина",
+		"flag": true,
+		"metric": {
+			"name": "Метрическая система",
+			"km": {
+				"main": true,
+				"factor": "0.001",
+				"name": {
+					"nominative-singular": "километр",
+					"genitive-signular": "километра",
+					"genetive-plural": "километров",
+					"additional": null
+				}
+			},
+			"m": {
+				"main": true,
+				"factor": "1",
+				"name": {
+					"nominative-singular": "метр",
+					"genitive-signular": "метра",
+					"genetive-plural": "метров",
+					"additional": null
+				}
+			},
+			"dm": {
+				"main": true,
+				"factor": "10",
+				"name": {
+					"nominative-singular": "дециметр",
+					"genitive-signular": "дециметра",
+					"genetive-plural": "дециметров",
+					"additional": null
+				}
+			},
+			"cm": {
+				"main": true,
+				"factor": "100",
+				"name": {
+					"nominative-singular": "сантиметр",
+					"genitive-signular": "сантиметра",
+					"genetive-plural": "сантиметров",
+					"additional": null
+				}
+			},
+			"mm": {
+				"main": true,
+				"factor": "1000",
+				"name": {
+					"nominative-singular": "миллииметр",
+					"genitive-signular": "миллииметра",
+					"genetive-plural": "миллиметров",
+					"additional": null
+				}
+			},
+
+			"mcm": {
+				"main": true,
+				"factor": "1000000",
+				"name": {
+					"nominative-singular": "микрометр",
+					"genitive-signular": "микрометра",
+					"genetive-plural": "микрометров",
+					"additional": "микрон"
+				}
+			},
+
+			"nm": {
+				"main": true,
+				"factor": "1000000000",
+				"name": {
+					"nominative-singular": "нанометр",
+					"genitive-signular": "нанометра",
+					"genetive-plural": "нанометров",
+					"additional": null
+				}
+			},
+
+			"am": {
+				"main": true,
+				"factor": "10000000000",
+				"name": {
+					"nominative-singular": "ангстрем",
+					"genitive-signular": "ангстрема",
+					"genetive-plural": "ангстрем",
+					"additional": null
+				}
+			},
+		},
+
+		"england": {
+			"foot": "3.2808399",
+			"span": "4.3744532",
+			"link": "4.9709695",
+			"hand": "9.8425197",
+			"palm": "13.12336"
+		}
+	}	
+}

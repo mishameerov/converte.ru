@@ -19,24 +19,26 @@ function getXmlHttp(){
 }
 
 
-function tableOfFactorsInit(){
-	var req = new getXmlHttp();
-	req.open("GET", "./json/factor.json", true);
-	req.onreadystatechange = function parsURL(){
-		if (req.readyState == 4){
-			if(req.status == 200) {
-				var table = JSON.parse(req.responseText);
-			}
-		}
-	};
-	req.send(null);
+var the_object;
+var http_request = new XMLHttpRequest();
+http_request.open( "GET", "./json/factor.json", true );
+http_request.send(null);
+http_request.onreadystatechange = function () {
+    if ( http_request.readyState == 4 ) {
+        if ( http_request.status == 200 ) {
+            the_object = JSON.parse(http_request.responseText);
+        } else {
+            alert( "There was a problem with the URL." );
+        }
+        http_request = null;
+    }
 };
 
-// Input data correction//
+// Input data correction //
 function convert(input){
 
 	// Factor calculation
-	var factor=(input.value/tableOfFactors.[input.name]);
+	var factor=(input.value / tableOfFactors["n"]);
 	
 	
 };
@@ -53,6 +55,5 @@ function convert(input){
 //    });
 
 // });
-
 
 

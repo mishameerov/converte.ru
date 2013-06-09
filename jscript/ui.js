@@ -10,6 +10,8 @@ function digCorr(input){
 	};
 	// Only digits and comma  //
 	input.value = input.value.replace(/[^\d,]/g, '');
+	// test //
+	n = input.name;
 		
 };	
 
@@ -29,3 +31,15 @@ function digCorr(input){
 
 
 
+$(function(){
+  $('#values-container').masonry({
+    // options
+    itemSelector : '.values_block',
+    columnWidth : 320,
+    isAnimated: true,
+    animationOptions: {
+    duration: 400,
+    queue: false,
+  	}
+  });
+});
