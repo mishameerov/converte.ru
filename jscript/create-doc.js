@@ -63,7 +63,7 @@ function createFielsd(pid, bid, fid, main, name, add){
 		field.onkeyup = 'return digCorr(this);';
 		field.onchange = 'return digCorr(this);';
 		field.name = key+'-'+key2+'-'+key3;
-		if (add == true){field.className = 'field toggle'}
+		if (main == true){field.className = 'field toggle'}
 	var demen = document.createElement('span');
 		demen.className = "demension";
 		demension.innerHTML = name;
@@ -83,6 +83,7 @@ for (var key in the_object){
 				createBlocks(key, key2, the_object[key][key2]['name'])
 				for (var key3 in the_object[key][key2]){
 					if (typeof(the_object[key][key2][key3]) == "object"){
+						createFielsd(key, key2, key3, the_object[key][key2][key3]['main'], the_object[key][key2][key3]['name']['ominative-singular'], the_object[key][key2][key3]['name']['additional'])
 						for (var key4 in the_object[key][key2][key3]){
 							if (typeof(the_object[key][key2][key3][key4]) == "object"){
 								for (var key5 in the_object[key][key2][key3][key4]){

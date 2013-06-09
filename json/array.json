@@ -54,7 +54,6 @@
 					"additional": null
 				}
 			},
-
 			"mcm": {
 				"main": true,
 				"factor": "1000000",
@@ -65,7 +64,6 @@
 					"additional": "микрон"
 				}
 			},
-
 			"nm": {
 				"main": true,
 				"factor": "1000000000",
@@ -76,7 +74,6 @@
 					"additional": null
 				}
 			},
-
 			"am": {
 				"main": true,
 				"factor": "10000000000",
@@ -102,7 +99,7 @@
 				}
 			},
 			"span": {
-				"main": true,
+				"main": false,
 				"factor": "4.3744532",
 				"name": {
 					"nominative-singular": "спан",
@@ -111,10 +108,36 @@
 					"additional": null
 				}
 			},
-			"span": "4.3744532",
-			"link": "4.9709695",
-			"hand": "9.8425197",
-			"palm": "13.12336"
+			"link": {
+				"main": false,
+				"factor": "4.9709695",
+				"name": {
+					"nominative-singular": "линк",
+					"genitive-signular": "линка",
+					"genetive-plural": "линков",
+					"additional": null
+				}
+			},
+			"hand": {
+				"main": false,
+				"factor": "9.8425197",
+				"name": {
+					"nominative-singular": "хенд",
+					"genitive-signular": "хенда",
+					"genetive-plural": "хендов",
+					"additional": null
+				}
+			},
+			"palm": {
+				"main": false,
+				"factor": "13.12336",
+				"name": {
+					"nominative-singular": "палм",
+					"genitive-signular": "палма",
+					"genetive-plural": "палмов",
+					"additional": null
+				}
+			}
 		}
 	}	
 }
