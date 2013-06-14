@@ -2,22 +2,8 @@
 
 
 // Input data correction//
-function digCorr(input){
-	
-	// Change comma to dot //
-	if (event.keyCode == 190) { 
-		event.keyCode = 188; 
-	};
-	// Only digits and comma  //
-	input.value = input.value.replace(/[^\d,]/g, '');
-	// test //
-	n = input.name;
+
 		
-};	
-
-
-
-
 /* Hide rare positions 
 
 	$(document).ready(function(){
@@ -28,6 +14,7 @@ function digCorr(input){
 
 	});
 */
+
 
 
 

@@ -7,16 +7,20 @@
 <!-- ALL STYLE LINKS MUST BE HERE BLYAD! -->
 <link rel="stylesheet" href="./css/reset.css" />
 <link rel="stylesheet" href="./css/main.css" />
+<link rel="stylesheet" href="./css/fonts.css" />
 <link rel="stylesheet" href="./css/scrollyeah.min.css" />
-<link href='http://fonts.googleapis.com/css?family=Philosopher:700&subset=cyrillic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="./css/jquery-ui.min.css" />
+<link href='http://fonts.googleapis.com/css?family=Philosopher:700&subset=cyrillic' rel='stylesheet' type='text/css' />
 
 <!-- ALL LINKS TO SCRIPTS MUST BE HERE! -->
-<script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.min.js'> </script>
-<script type='text/javascript' src='./jscript/ui.js'> </script>
-<script type='text/javascript' src='./jscript/convert.js'> </script>
-<script type='text/javascript' src='./jscript/jquery.masonry.min.js'> </script>
-<script type='text/javascript' src='./jscript/scrollyeah.min.js'> </script>
-<script type='text/javascript' src='./jscript/factor.js'> </script>
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.js'></script>
+<script type='text/javascript' src='./jscript/ui.js'></script>
+
+<script type='text/javascript' src='http://code.jquery.com/ui/1.10.3/jquery-ui.min.js'></script>
+<script type='text/javascript' src='./jscript/jquery.masonry.min.js'></script>
+<script type='text/javascript' src='./jscript/create-doc.js'></script>
+<script type='text/javascript' src='./jscript/scrollyeah.min.js'></script>
+
 
 
 
@@ -24,242 +28,20 @@
 </head>
 <body>
 
-
 <div class="container_12" id="main-container">
   <h1>Конвертер</h1>
-  <div class="nav scrollyeah" data-centerIfFit="true" id="navigation">
-    <div class="nav_item">
-      <a href="" />
-        <div class="icon">
-          <img src="./img/nav_placeholder.png" />
-        </div>
-        <div class="label">
-          <div class="text">Температура</div>
-        </div>
-      </a>
-    </div>
-    
-    <div class="nav_item">
-        <div class="icon">
-          <img src="./img/nav_placeholder.png" />
-        </div>
-        <div class="label current">
-          <div class="text">Площадь</div>
-        </div>  
-    </div>
 
-    <div class="nav_item">
-      <a href="" />
-        <div class="icon">
-          <img src="./img/nav_placeholder.png" />
-        </div>
-        <div class="label">
-          <div class="text">Температура</div>
-        </div>
-      </a>
-    </div>
-
-    <div class="nav_item">
-      <a href="" />
-        <div class="icon">
-          <img src="./img/nav_placeholder.png" />
-        </div>
-        <div class="label">
-          <div class="text">Температура</div>
-        </div>
-      </a>
-    </div>
-
-    <div class="nav_item">
-      <a href="" />
-        <div class="icon">
-          <img src="./img/nav_placeholder.png" />
-        </div>
-        <div class="label">
-          <div class="text">Температура</div>
-        </div>
-      </a>
-    </div>
-
+  <div class="nav" data-centerIfFit="true" data-disableIfFit="false" id="navigation">
   </div>
-  
-<div class="values_container" id="values-container"> 
 
- <div class="values_block" id="length-metric">
-	<h2>Метрическая система</h2>
-	<input type="text" class="field" value="0,001" onkeyup="return digCorr(this);" onchange="return digCorr(this);" name="length.metric.km" />
-	<span class="demension">километр</span>
-
-	<input type="text" class="field" value="1" name="length-metric-me" />
-	<span class="demension">метр</span>
-    
-    <input type="text" class="field" value="100" name="length-metric-cm" />
-	<span class="demension">сантиметр</span>
-    
-    <input type="text" class="field" value="1000" name="length-metric-mm" />
-	<span class="demension">миллиметр</span>
-    
-    <input type="text" class="field" value="1000000" name="length-metric-mcm" />
-	<span class="demension"><abbr title="микрометр" >микрон</span>
-    
-    <input type="text" class="field" value="1000000000" name="length-metric-nm" />
-	<span class="demension">нанометр</span>
-    
-    <input type="text" class="field" value="10000000000" name="length-metric-am" />
-	<span class="demension">ангстрем</span>
-
+  <div class="values_container" id="values-container"> 
   </div>
-  <!-- end length-metric -->
-
-  <div class="grid_4 values_block" id="length-britan">
-	<h2>Английская система</h2>
-    <form action="">
-	<input type="text" class="field" value="0,04167" name="length-britan-league" />
-	<span class="demension">лига</span>
-
-	<input type="text" class="field" value="0,125" name="length-britan-nautical-mile-UK" />
-	<span class="demension">морская миля</span>
-    
-    <input type="text" class="field" value="0,125" name="length-britan-nautical-mile-USA" />
-	<span class="demension">морская миля</span>
-    
-    <input type="text" class="field" value="0,125" name="length-britan-statute-mile" />
-	<span class="demension">уставная миля</span>
-    
-    <input type="text" class="field" value="1" name="length-britan-farlong" />
-	<span class="demension">фарлонг</span>
-    
-    <input type="text" class="field" value="10" name="length-britan-chain" />
-	<span class="demension">чейн</span>
-    
-    <input type="text" class="field" value="40" name="length-britan-rod" />
-	<span class="demension">род, поль, перч</span>
-    
-    <input type="text" class="field" value="110" name="length-britan-fantom" />
-	<span class="demension">фантом</span>
-    
-    <input type="text" class="field" value="176" name="length-britan-ell" />
-	<span class="demension">эль</span>
-    
-    <input type="text" class="field" value="220" name="length-britan-yard" />
-	<span class="demension">ярд</span>
-    
-    <input type="text" class="field" value="440" name="length-britan-cubit" />
-	<span class="demension">кубит</span>
-    
-    <input type="text" class="field" value="660" name="length-britan-foot" />
-	<span class="demension">фут</span>
-    
-    <input type="text" class="field" value="880" name="length-britan-span" />
-	<span class="demension">спан</span>
-    
-    <input type="text" class="field" value="1000" name="length-britan-link" />
-	<span class="demension">линк</span>
-    
-    <input type="text" class="field" value="1980" name="length-britan-hand" />
-	<span class="demension">хэнд</span>
-    
-    <input type="text" class="field" value="2640" name="length-britan-palm" />
-	<span class="demension">палм</span>
-    
-    <input type="text" class="field" value="3520" name="length-britan-nail" />
-	<span class="demension">нэйл</span>
-    
-    <input type="text" class="field" value="7920" name="length-britan-inch" />
-	<span class="demension">дюйм</span>
-    
-    <input type="text" class="field" value="9051" name="length-britan-finger" />
-	<span class="demension">фингер</span>
-    
-    <input type="text" class="field" value="10070" name="length-britan-digit" />
-	<span class="demension">диджит</span>
-    
-    <input type="text" class="field" value="23760" name="length-britan-barleycorn" />
-	<span class="demension">барлейкорн</span>
-    
-    <input type="text" class="field" value="95040" name="length-britan-line" />
-	<span class="demension">лайн</span>
-    
-    <input type="text" class="field" value="7920000" name="length-britan-mil" />
-	<span class="demension">мил</span>
-    
-    <input type="text" class="field" value="7920000000" name="length-britan-microinch" />
-	<span class="demension">микродюйм</span>
-
-    </form> 
-  </div>
-  <!-- end length-britan -->
-
-    
-  <div class="grid_4 values_block" id="length-astro">
-	<h2>Астрономические единицы</h2>
-    <form action="">
-
-	<input type="text" class="field" value="1" name="length-astro-parsec" />
-	<span class="demension">парсек</span>
-    
-    <input type="text" class="field" value="3,262" name="length-astro-lightyear" />
-	<span class="demension">световой год</span>
-    
-    <input type="text" class="field" value="206300" name="length-astro-au" />
-	<span class="demension">а.е.</span>
-    
-    <input type="text" class="field" value="1715000" name="length-astro-lightminute" />
-	<span class="demension">световая минута</span>
-    
-    <input type="text" class="field" value="102900000" name="length-astro-lightsecond" />
-	<span class="demension">световая секунда</span>
- </form>
-  </div>
-  <!-- end length-astro -->
-   
-  <div class="grid_4 values_block" id="length-oldrus">
-	<h2>Страрорусские величины</h2>
-    <form action="">
-
-	<input type="text" class="field" value="1" name="length-oldrus-mile" />
-	<span class="demension">парсек</span>
-    
-    <input type="text" class="field" value="3,262" name="length-oldrus-verst" />
-	<span class="demension">световой год</span>
-    
-    <input type="text" class="field" value="206300" name="length-oldrus-mverst" />
-	<span class="demension">а.е.</span>
-    
-    <input type="text" class="field" value="1715000" name="length-oldrus-sazhen" />
-	<span class="demension">световая минута</span>
-        
-    <input type="text" class="field" value="102900000" name="length-oldrus-arshin" />
-	<span class="demension">световая секунда</span>
-    
-    <input type="text" class="field" value="102900000" name="length-oldrus-foot" />
-	<span class="demension">световая секунда</span>
-    
-    <input type="text" class="field" value="102900000" name="length-oldrus-pyad" />
-	<span class="demension">световая секунда</span>
-    
-    <input type="text" class="field" value="102900000" name="length-oldrus-vershok" />
-	<span class="demension">световая секунда</span>
-    
-    <input type="text" class="field" value="102900000" name="length-oldrus-inch" />
-	<span class="demension">световая секунда</span>
-    
-    <input type="text" class="field" value="102900000" name="length-oldrus-line" />
-	<span class="demension">световая секунда</span>
-    
-    <input type="text" class="field" value="102900000" name="length-oldrus-dot" />
-	<span class="demension">световая секунда</span>
-
-	</form>
-  </div>
-  <!-- end length-oldrus -->
-</div>
 
 </div>
 <!-- end main-container -->
 
 <div class="container_12 bottom-container" id="bottom-container">
- 	<a class="reallink" href="#">©2022–2024 Alyosha Popovich</a>
+ 	© 2013 Сайт сделал <a class="reallink" href="http://mishameerov.ru">Миша Мееров</a>
 </div>
 <!-- end bottom-container -->
 

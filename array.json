@@ -1,16 +1,16 @@
 {
+    "defaultPageId": "len",
     "len": {
         "name": "Длина",
-        "default": true,
         "metric": {
             "name": "Метрическая система",
             "km": {
                 "main": true,
                 "factor": "0.001",
                 "name": {
-                    "nominative-singular": "километр",
-                    "genitive-signular": "километра",
-                    "genetive-plural": "километров",
+                    "nominative_singular": "километр",
+                    "genitive_signular": "километра",
+                    "genetive_plural": "километров",
                     "additional": null
                 }
             },
@@ -18,9 +18,9 @@
                 "main": true,
                 "factor": "1",
                 "name": {
-                    "nominative-singular": "метр",
-                    "genitive-signular": "метра",
-                    "genetive-plural": "метров",
+                    "nominative_singular": "метр",
+                    "genitive_signular": "метра",
+                    "genetive_plural": "метров",
                     "additional": null
                 }
             },
@@ -28,9 +28,9 @@
                 "main": true,
                 "factor": "10",
                 "name": {
-                    "nominative-singular": "дециметр",
-                    "genitive-signular": "дециметра",
-                    "genetive-plural": "дециметров",
+                    "nominative_singular": "дециметр",
+                    "genitive_signular": "дециметра",
+                    "genetive_plural": "дециметров",
                     "additional": null
                 }
             },
@@ -38,9 +38,9 @@
                 "main": true,
                 "factor": "100",
                 "name": {
-                    "nominative-singular": "сантиметр",
-                    "genitive-signular": "сантиметра",
-                    "genetive-plural": "сантиметров",
+                    "nominative_singular": "сантиметр",
+                    "genitive_signular": "сантиметра",
+                    "genetive_plural": "сантиметров",
                     "additional": null
                 }
             },
@@ -48,9 +48,9 @@
                 "main": true,
                 "factor": "1000",
                 "name": {
-                    "nominative-singular": "миллииметр",
-                    "genitive-signular": "миллииметра",
-                    "genetive-plural": "миллиметров",
+                    "nominative_singular": "миллииметр",
+                    "genitive_signular": "миллииметра",
+                    "genetive_plural": "миллиметров",
                     "additional": null
                 }
             },
@@ -58,9 +58,9 @@
                 "main": true,
                 "factor": "1000000",
                 "name": {
-                    "nominative-singular": "микрометр",
-                    "genitive-signular": "микрометра",
-                    "genetive-plural": "микрометров",
+                    "nominative_singular": "микрометр",
+                    "genitive_signular": "микрометра",
+                    "genetive_plural": "микрометров",
                     "additional": "микрон"
                 }
             },
@@ -68,9 +68,9 @@
                 "main": true,
                 "factor": "1000000000",
                 "name": {
-                    "nominative-singular": "нанометр",
-                    "genitive-signular": "нанометра",
-                    "genetive-plural": "нанометров",
+                    "nominative_singular": "нанометр",
+                    "genitive_signular": "нанометра",
+                    "genetive_plural": "нанометров",
                     "additional": null
                 }
             },
@@ -78,9 +78,9 @@
                 "main": true,
                 "factor": "10000000000",
                 "name": {
-                    "nominative-singular": "ангстрем",
-                    "genitive-signular": "ангстрема",
-                    "genetive-plural": "ангстрем",
+                    "nominative_singular": "ангстрем",
+                    "genitive_signular": "ангстрема",
+                    "genetive_plural": "ангстрем",
                     "additional": null
                 }
             }
@@ -91,9 +91,9 @@
                 "main": true,
                 "factor": "3.2808399",
                 "name": {
-                    "nominative-singular": "фут",
-                    "genitive-signular": "фута",
-                    "genetive-plural": "футов",
+                    "nominative_singular": "фут",
+                    "genitive_signular": "фута",
+                    "genetive_plural": "футов",
                     "additional": null
                 }
             },
@@ -101,9 +101,9 @@
                 "main": false,
                 "factor": "4.3744532",
                 "name": {
-                    "nominative-singular": "спан",
-                    "genitive-signular": "спана",
-                    "genetive-plural": "спанов",
+                    "nominative_singular": "спан",
+                    "genitive_signular": "спана",
+                    "genetive_plural": "спанов",
                     "additional": null
                 }
             },
@@ -111,9 +111,9 @@
                 "main": false,
                 "factor": "4.9709695",
                 "name": {
-                    "nominative-singular": "линк",
-                    "genitive-signular": "линка",
-                    "genetive-plural": "линков",
+                    "nominative_singular": "линк",
+                    "genitive_signular": "линка",
+                    "genetive_plural": "линков",
                     "additional": null
                 }
             },
@@ -121,9 +121,9 @@
                 "main": false,
                 "factor": "9.8425197",
                 "name": {
-                    "nominative-singular": "хенд",
-                    "genitive-signular": "хенда",
-                    "genetive-plural": "хендов",
+                    "nominative_singular": "хенд",
+                    "genitive_signular": "хенда",
+                    "genetive_plural": "хендов",
                     "additional": null
                 }
             },
@@ -131,9 +131,9 @@
                 "main": false,
                 "factor": "13.12336",
                 "name": {
-                    "nominative-singular": "палм",
-                    "genitive-signular": "палма",
-                    "genetive-plural": "палмов",
+                    "nominative_singular": "палм",
+                    "genitive_signular": "палма",
+                    "genetive_plural": "палмов",
                     "additional": null
                 }
             }
