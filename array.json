@@ -5,7 +5,7 @@
         "metric": {
             "name": "Метрическая система",
             "km": {
-                "main": true,
+                "hidden": false,
                 "factor": "0.001",
                 "name": {
                     "nominative_singular": "километр",
@@ -15,7 +15,7 @@
                 }
             },
             "m": {
-                "main": true,
+                "hidden": false,
                 "factor": "1",
                 "name": {
                     "nominative_singular": "метр",
@@ -25,7 +25,7 @@
                 }
             },
             "dm": {
-                "main": true,
+                "hidden": false,
                 "factor": "10",
                 "name": {
                     "nominative_singular": "дециметр",
@@ -35,7 +35,7 @@
                 }
             },
             "cm": {
-                "main": true,
+                "hidden": false,
                 "factor": "100",
                 "name": {
                     "nominative_singular": "сантиметр",
@@ -45,7 +45,7 @@
                 }
             },
             "mm": {
-                "main": true,
+                "hidden": false,
                 "factor": "1000",
                 "name": {
                     "nominative_singular": "миллииметр",
@@ -55,7 +55,7 @@
                 }
             },
             "mcm": {
-                "main": true,
+                "hidden": false,
                 "factor": "1000000",
                 "name": {
                     "nominative_singular": "микрометр",
@@ -65,7 +65,7 @@
                 }
             },
             "nm": {
-                "main": true,
+                "hidden": false,
                 "factor": "1000000000",
                 "name": {
                     "nominative_singular": "нанометр",
@@ -75,12 +75,351 @@
                 }
             },
             "am": {
-                "main": true,
+                "hidden": false,
                 "factor": "10000000000",
                 "name": {
                     "nominative_singular": "ангстрем",
                     "genitive_signular": "ангстрема",
                     "genetive_plural": "ангстрем",
+                    "additional": null
+                }
+            }
+        },
+        "england": {
+            "name": "Английская система",
+            "lg": {
+                "hidden": true,
+                "factor": "0.00020712373075",
+                "name": {
+                    "nominative_singular": "лига",
+                    "genitive_signular": "лиги",
+                    "genetive_plural": "лиг",
+                    "additional": null
+                }
+            },
+            "mil": {
+                "hidden": false,
+                "factor": "0.00062137119224",
+                "name": {
+                    "nominative_singular": "миля",
+                    "genitive_signular": "мили",
+                    "genetive_plural": "миль",
+                    "additional": null
+                }
+            },
+            "fl": {
+                "hidden": true,
+                "factor": "0.0049709695",
+                "name": {
+                    "nominative_singular": "фарлонг",
+                    "genitive_signular": "фарлонга",
+                    "genetive_plural": "фарлонгов",
+                    "additional": null
+                }
+            },
+            "cn": {
+                "hidden": false,
+                "factor": "0.049709695",
+                "name": {
+                    "nominative_singular": "чейн",
+                    "genitive_signular": "чейна",
+                    "genetive_plural": "чейнов",
+                    "additional": null
+                }
+            },
+            "rd": {
+                "hidden": true,
+                "factor": "0.19883878",
+                "name": {
+                    "nominative_singular": "перч",
+                    "genitive_signular": "перча",
+                    "genetive_plural": "перчей",
+                    "additional": null
+                }
+            },
+            "fn": {
+                "hidden": true,
+                "factor": "0.54680665",
+                "name": {
+                    "nominative_singular": "фантом",
+                    "genitive_signular": "фантома",
+                    "genetive_plural": "фантомов",
+                    "additional": null
+                }
+            },
+            "el": {
+                "hidden": true,
+                "factor": "0.87489064",
+                "name": {
+                    "nominative_singular": "эль",
+                    "genitive_signular": "эля",
+                    "genetive_plural": "элей",
+                    "additional": null
+                }
+            },
+            "yd": {
+                "hidden": false,
+                "factor": "1.0936133",
+                "name": {
+                    "nominative_singular": "ярд",
+                    "genitive_signular": "ярда",
+                    "genetive_plural": "ярдов",
+                    "additional": null
+                }
+            },
+            "qb": {
+                "hidden": true,
+                "factor": "2.1872266",
+                "name": {
+                    "nominative_singular": "кубит",
+                    "genitive_signular": "кубита",
+                    "genetive_plural": "кубит",
+                    "additional": null
+                }
+            },
+            "ft": {
+                "hidden": false,
+                "factor": "3.2808399",
+                "name": {
+                    "nominative_singular": "фут",
+                    "genitive_signular": "фута",
+                    "genetive_plural": "футов",
+                    "additional": null
+                }
+            },
+            "sp": {
+                "hidden": true,
+                "factor": "4.3744532",
+                "name": {
+                    "nominative_singular": "спан",
+                    "genitive_signular": "спана",
+                    "genetive_plural": "спанов",
+                    "additional": null
+                }
+            },
+            "lk": {
+                "hidden": true,
+                "factor": "4.9709695",
+                "name": {
+                    "nominative_singular": "линк",
+                    "genitive_signular": "линка",
+                    "genetive_plural": "линков",
+                    "additional": null
+                }
+            },
+            "hd": {
+                "hidden": true,
+                "factor": "9.8425197",
+                "name": {
+                    "nominative_singular": "хэнд",
+                    "genitive_signular": "хэнда",
+                    "genetive_plural": "хэндов",
+                    "additional": null
+                }
+            },
+            "pl": {
+                "hidden": true,
+                "factor": "13.12336",
+                "name": {
+                    "nominative_singular": "палм",
+                    "genitive_signular": "палма",
+                    "genetive_plural": "палмов",
+                    "additional": null
+                }
+            },
+            "nl": {
+                "hidden": true,
+                "factor": "17.497813",
+                "name": {
+                    "nominative_singular": "нэйл",
+                    "genitive_signular": "нэйла",
+                    "genetive_plural": "нэйлов",
+                    "additional": null
+                }
+            },
+            "in": {
+                "hidden": false,
+                "factor": "39.370079",
+                "name": {
+                    "nominative_singular": "дюйм",
+                    "genitive_signular": "дюйма",
+                    "genetive_plural": "дюймов",
+                    "additional": null
+                }
+            },
+            "fi": {
+                "hidden": true,
+                "factor": "44.994376",
+                "name": {
+                    "nominative_singular": "фингер",
+                    "genitive_signular": "фингера",
+                    "genetive_plural": "фингеров",
+                    "additional": null
+                }
+            },
+            "dg": {
+                "hidden": true,
+                "factor": "50.075113",
+                "name": {
+                    "nominative_singular": "диджит",
+                    "genitive_signular": "диджита",
+                    "genetive_plural": "диджитов",
+                    "additional": null
+                }
+            },
+            "bk": {
+                "hidden": true,
+                "factor": "118.11024",
+                "name": {
+                    "nominative_singular": "барлейкорн",
+                    "genitive_signular": "барлейкорна",
+                    "genetive_plural": "барлейкорнов",
+                    "additional": null
+                }
+            },
+            "ln": {
+                "hidden": false,
+                "factor": "472.44094",
+                "name": {
+                    "nominative_singular": "лайн",
+                    "genitive_signular": "лайна",
+                    "genetive_plural": "лайнов",
+                    "additional": null
+                }
+            },
+            "ml": {
+                "hidden": true,
+                "factor": "39370.079",
+                "name": {
+                    "nominative_singular": "мил",
+                    "genitive_signular": "мила",
+                    "genetive_plural": "милов",
+                    "additional": null
+                }
+            }
+        }
+    },
+    "weight": {
+        "name": "Вес",
+        "metric": {
+            "name": "Метрическая система",
+            "kt": {
+                "main": true,
+                "factor": "0.000001",
+                "name": {
+                    "nominative_singular": "килотонна",
+                    "genitive_signular": "килотонны",
+                    "genetive_plural": "килотонн",
+                    "additional": null
+                }
+            },
+            "t": {
+                "main": true,
+                "factor": "0.001",
+                "name": {
+                    "nominative_singular": "тонна",
+                    "genitive_signular": "тонны",
+                    "genetive_plural": "тонн",
+                    "additional": null
+                }
+            },
+            "kn": {
+                "main": true,
+                "factor": "0.00980665205",
+                "name": {
+                    "nominative_singular": "килоньютон",
+                    "genitive_signular": "килоньютона",
+                    "genetive_plural": "килоньютон",
+                    "additional": null
+                }
+            },
+            "c": {
+                "main": true,
+                "factor": "0.01",
+                "name": {
+                    "nominative_singular": "центнер",
+                    "genitive_signular": "центнера",
+                    "genetive_plural": "центнеров",
+                    "additional": null
+                }
+            },
+            "kg": {
+                "main": true,
+                "factor": "1",
+                "name": {
+                    "nominative_singular": "килограмм",
+                    "genitive_signular": "килограмма",
+                    "genetive_plural": "килограмм",
+                    "additional": null
+                }
+            },
+            "n": {
+                "main": true,
+                "factor": "9.806652",
+                "name": {
+                    "nominative_singular": "ньютон",
+                    "genitive_signular": "ньютона",
+                    "genetive_plural": "ньютон",
+                    "additional": null
+                }
+            },
+            "g": {
+                "main": true,
+                "factor": "10000000000",
+                "name": {
+                    "nominative_singular": "грамм",
+                    "genitive_signular": "грамма",
+                    "genetive_plural": "грамм",
+                    "additional": null
+                }
+            },
+            "ct": {
+                "main": true,
+                "factor": "5000",
+                "name": {
+                    "nominative_singular": "карат",
+                    "genitive_signular": "карата",
+                    "genetive_plural": "карат",
+                    "additional": null
+                }
+            },
+            "cg": {
+                "main": true,
+                "factor": "100000",
+                "name": {
+                    "nominative_singular": "центиграмм",
+                    "genitive_signular": "центиграмма",
+                    "genetive_plural": "центиграмм",
+                    "additional": null
+                }
+            },
+            "mg": {
+                "main": true,
+                "factor": "1000000",
+                "name": {
+                    "nominative_singular": "миллиграмм",
+                    "genitive_signular": "миллиграмма",
+                    "genetive_plural": "миллиграмм",
+                    "additional": null
+                }
+            },
+            "mkg": {
+                "main": true,
+                "factor": "1000000000",
+                "name": {
+                    "nominative_singular": "микрограмм",
+                    "genitive_signular": "микрограмма",
+                    "genetive_plural": "микрограмм",
+                    "additional": null
+                }
+            },
+            "amu": {
+                "main": true,
+                "factor": "5000",
+                "name": {
+                    "nominative_singular": "карат",
+                    "genitive_signular": "карата",
+                    "genetive_plural": "карат",
                     "additional": null
                 }
             }
@@ -138,5 +477,68 @@
                 }
             }
         }
+    },
+    "volume": {
+        "name": "Объем"
+    },
+    "area": {
+        "name": "Площадь"
+    },
+    "speed": {
+        "name": "Скорость"
+    },
+    "temperature": {
+        "name": "Температура"
+    },
+    "time": {
+        "name": "Время"
+    },
+    "boost": {
+        "name": "Ускорение"
+    },
+    "density": {
+        "name": "Плотность"
+    },
+    "pressure": {
+        "name": "Давление"
+    },
+    "energy": {
+        "name": "Энергия"
+    },
+    "power": {
+        "name": "Мощность"
+    },
+    "angle": {
+        "name": "Углы"
+    },
+    "data": {
+        "name": "Объем данных"
+    },
+    "dataspeed": {
+        "name": "Передача данных"
+    },
+    "electricity": {
+        "name": "Электрический ток"
+    },
+    "radiation": {
+        "name": "Радиация"
+    },
+    "brightness": {
+        "name": "Яркость"
+    },
+    "frequency": {
+        "name": "Частота"
+    },
+    "currency": {
+        "name": "Валюта"
+    },
+    "torque": {
+        "name": "Крутящий момент"
+    },
+    "footsize": {
+        "name": "Размер обуви"
+    },
+    "dresssize": {
+        "name": "Размер одежды"
     }
 }

@@ -1,17 +1,29 @@
-/* это будет проверка кеша		
-if (typeof(localStorage.lastUpdateDate) != 'string') || (Date.parse(localStorage.lastUpdateDate)-Date() > 86400000){ //проверка существования кеша и последней даты изменения
-	//если кешу больше суток (86400000 милисекунды)
-	localStorage.lastUpdateDate = Date();
-	loadJSONtoObject();
-	localStorage.the_object = the_object;
-}else{ //если кеш свежий
-	the_object = localStorage.the_object;
-}
+
+/*
+	Переменные, которые должны храниться локально: 
+	1. Последняя открытая вкладка 
+	localStorage.lastMenuItem 
+	2. Последнее введенное значение на каждой вкладке ()
 */
+// это будет проверка кеша
 
 $(document).ready(function(){ //основная функция, выполняется при загрузке
 	loadJSONtoObject();
 });
+
+function authorizationLocal(){
+	if ((typeof(localStorage.lastUpdateDate) != 'string') || (Date.parse(localStorage.lastUpdateDate)-Date() > 86400000)){ //проверка существования кеша и последней даты изменения
+		//если кешу больше суток (86400000 милисекунды)
+		localStorage.lastUpdateDate = Date();
+		loadJSONtoObject();
+		localStorage.the_object = the_object;
+	}else{ //если кеш свежий
+		the_object = localStorage.the_object;
+	}
+};
+//
+
+
 
 
 
@@ -23,96 +35,36 @@ function loadJSONtoObject(){ //загрузка объекта
 	});
 };
 
-function morphNums(val, id){
-	status = '';
-	val = Math.abs(val);
-	if ((val-Math.floor(val) != 0) || (val.toString().charAt(val.toString().length-4)) == 'e'){
-		status = 'genitive_signular';
-	} else {
-		val1 = parseInt(val.toString().charAt(val.length-1));
-		val10 = parseInt(val.toString().charAt(val.length-2));
-		switch (val10){
-			case 1:
-				status = 'genetive-plural'
-			break
-			default:{
-				switch(val1){
-					case 1:
-						status = 'nominative_singular'
-					break
-					case 2:
-					case 3:
-					case 4:
-						status = 'genitive_signular'
-					break
-					default:
-						status = 'genetive_plural'					
-				}
-			}
-		}
-	}
-	var lnk = id.split('-', 3);
-	var decl = the_object[lnk[0]][lnk[1]][lnk[2]]['name'][status];
-	$('#'+id+'-dem').html('&nbsp;'+decl);
-};
-
 function defaultParametres(){ //установка обработчиков, вычисление параметров по умолчанию и вызов тригеров  
 	$('.nav_item').on('click', menuClick); //обработчик клика по элементам меню
 	$('.values_container').on('input propertychange', mainFunction); //обработчик изменения текстовых полей
 	$('#navigation').attr('class', 'nav scrollyeah'); //инициализация меню
+
+	var firstHash = document.location.hash
 	defaultPageId = '#'+the_object.defaultPageId; //вычисление и вызов элемента меню по умолчанию
+	if(localStorage.lastMenuItem != "") defaultPageId=localStorage.lastMenuItem
 	$(defaultPageId).click();
+	document.location.hash = firstHash
 	if (document.location.hash != "") $(document.location.hash).click();
 };
 
-function menuClick(event){ //клик по элементу меню
-	$('.values_container').css('display', 'none'); //выключаем все элементы
-	$('.nav_href').attr('href', '#'+$('#nav-href-len').parent().attr('id'));
+function menuClick(eventNav){ //клик по элементу меню
+	//выключаем все элементы
+	m = eventNav.currentTarget.id;
+	$('.values_container').css('display', 'none'); 
+	$('.nav_href').attr('href', '#'+m); //сомнительная строка
 	$('.current').attr('class', 'label');
 
-	m = event.currentTarget.id; //Включаем тот, на котором сработало событие
+	//Включаем тот, на котором сработало событие
 	$('#nav-label-'+m).attr('class', 'label current');
 	$('#'+m+'-container').css('display', 'block');
 	$('.values_container').masonry( 'reload' );
 	$('#nav-href-'+m).attr('href', null);
 	document.location.hash = '#'+m;
+	localStorage.lastMenuItem = '#'+m;
 };
 
-function mainFunction(keyboardEvent){
-	digitsCorreection(keyboardEvent.target);
-	calculate(keyboardEvent.target);
-};
 
-function calculate(valField){
-	var	currentValue = parseFloat(valField.value.split(',').join('.'));
-	var	condArray = valField.id.split('-', 3);
-	var condFactor = parseFloat(the_object[condArray[0]][condArray[1]][condArray[2]]['factor']);
-	$('#'+condArray[0]+'-container input.field').each(function(indx, domEl){
-		if (domEl.id != valField.id){
-			var resArray = domEl.id.split('-', 3);
-			var resFactor = parseFloat(the_object[resArray[0]][resArray[1]][resArray[2]]['factor']);
-			var result = "";
-			result = (currentValue/condFactor*resFactor);
-			this.value = result;
-		 	morphNums(domEl.value, domEl.id)
-
-		} 
-	});
-};
-
-function digitsCorreection(field){
-	var isComma=false
-	field.value = field.value.replace(/[^0-9,\\.]/g, '');
-	field.value = field.value.replace(/[\\.]/g, ',');
-	field.value = field.value.replace(/,|\\./g, function(){
-		if (isComma == false) {
-			isComma = true
-			return ','
-		}else{
-			return ''
-		}
-	});
-};
 
 function drawPages(){ //отрисовка страниц 
 	pagesArray = [];
@@ -170,7 +122,7 @@ function createMenu(pid, pname, isDefault){ //создание элемента 
 		textDiv.className = 'text';
 		textDiv.id = 'nav-text-'+pid;
 		textDiv.innerHTML = pname;
-	var navMenu = document.getElementById('navigation');
+	var navMenu = document.getElementsByClassName('scrollyeah__shaft')[0];
 		navMenu.appendChild(navDiv);
 		navDiv.appendChild(navHref);
 		navHref.appendChild(iconDiv);
@@ -218,4 +170,80 @@ function createFields(pid, bid, fid, main, name, add, factor){ //создани�
 	var block = document.getElementById(pid+'-'+bid);
 		block.appendChild(field);
 		block.appendChild(demen);
+};
+
+
+
+function mainFunction(keyboardEvent){
+	digitsCorreection(keyboardEvent.target);
+	calculate(keyboardEvent.target);
+};
+
+function digitsCorreection(field){
+	var isComma=false
+	field.value = field.value.replace(/[^0-9-,\\.\\+]/g, '');
+	field.value = field.value.replace(/[\\.]/g, ',');
+	field.value = field.value.replace(/,|\\./g, function(){
+		if (isComma == false) {
+			isComma = true
+			return ','
+		}else{
+			return ''
+		}
+	});
+};
+
+function calculate(valField){
+	var	currentValue = parseFloat(valField.value.split(',').join('.'))*10000;
+	var	condArray = valField.id.split('-', 3);
+	var condFactor = parseFloat(the_object[condArray[0]][condArray[1]][condArray[2]]['factor']);
+	$('#'+condArray[0]+'-container input.field').each(function(indx, domEl){
+		if (domEl.id != valField.id){
+			var resArray = domEl.id.split('-', 3);
+			var resFactor = parseFloat(the_object[resArray[0]][resArray[1]][resArray[2]]['factor'])*10000;
+			var result = "";
+			result = (currentValue*resFactor/condFactor)/100000000;
+			this.value = +result.toPrecision(7);
+		 	morphNums(this.value, this.id)
+
+		} 
+	});
+};
+
+function morphNums(val, id){
+	var status = '';
+	var val = Math.abs(val);
+	if ((val-Math.floor(val) != 0) || (val.toString().charAt(val.toString().length-4)) == 'e'){
+		status = 'genitive_signular';
+	} else {
+		var val1 = parseInt(val.toString().charAt(val.toString().length-1));
+		var val10 = parseInt(val.toString().charAt(val.toString().length-2));
+		switch (val10){
+			case 1:
+				status = 'genetive_plural'
+			break
+			default:{
+				switch(val1){
+					case 1:
+						status = 'nominative_singular'
+					break
+					case 2:
+					case 3:
+					case 4:
+						status = 'genitive_signular'
+					break
+					default:
+						status = 'genetive_plural'					
+				}
+			}
+		}
+	}
+	var lnk = id.split('-', 3);
+	var decl = the_object[lnk[0]][lnk[1]][lnk[2]]['name'][status];
+	$('#'+id+'-dem').html('&nbsp;'+decl);
+};
+
+function roundTo(value, precision){
+	var precision_number = Math.pow(10, precision);
+	return Math.round(value * precision_number) / precision_number;
 };
