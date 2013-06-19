@@ -1,67 +1,46 @@
-
-/*
-	Переменные, которые должны храниться локально: 
-	1. Последняя открытая вкладка 
-	localStorage.lastMenuItem 
-	2. Последнее введенное значение на каждой вкладке ()
-*/
-// это будет проверка кеша
-
-$(document).ready(function(){ //основная функция, выполняется при загрузке
-	loadJSONtoObject();
-});
-
-function authorizationLocal(){
-	if ((typeof(localStorage.lastUpdateDate) != 'string') || (Date.parse(localStorage.lastUpdateDate)-Date() > 86400000)){ //проверка существования кеша и последней даты изменения
-		//если кешу больше суток (86400000 милисекунды)
-		localStorage.lastUpdateDate = Date();
-		loadJSONtoObject();
-		localStorage.the_object = the_object;
-	}else{ //если кеш свежий
-		the_object = localStorage.the_object;
-	}
-};
-//
-
-
-
-
-
-function loadJSONtoObject(){ //загрузка объекта
-	tempGet = $.getJSON("./array.json", function(){ 
+$(document).ready(function () { //основная функция, выполняется при загрузке
+	var tempGet = $.getJSON("./array.json", function(){ 
 		the_object = JSON.parse(tempGet.responseText);
 		drawPages();
 		defaultParametres();
+		$(window).resize();
 	});
-};
+});
+
 
 function defaultParametres(){ //установка обработчиков, вычисление параметров по умолчанию и вызов тригеров  
 	$('.nav_item').on('click', menuClick); //обработчик клика по элементам меню
-	$('.values_container').on('input propertychange', mainFunction); //обработчик изменения текстовых полей
+	$('.values_container').on('input', mainFunction); //обработчик изменения текстовых полей (убрал событие propertychange, надо проверить на ie)
+	$('.field').on('mouseup', function(){ //обработчик — выделяем весь текст в поле по поднятию кнопки мыши
+		$(this).select()
+	});
 	$('#navigation').attr('class', 'nav scrollyeah'); //инициализация меню
-
-	var firstHash = document.location.hash
-	defaultPageId = '#'+the_object.defaultPageId; //вычисление и вызов элемента меню по умолчанию
-	if(localStorage.lastMenuItem != "") defaultPageId=localStorage.lastMenuItem
+	if(localStorage.lastMenuItem != ""){ //вычисление и вызов элементов по умолчанию
+		defaultPageId = localStorage.lastMenuItem;
+	} else {
+		defaultPageId = '#'+the_object.defaultPageId;
+		defaultField = '#'+the_object.defaultFieldId;
+		defaultValue = Math.ceil(Math.random()*12);
+	};
 	$(defaultPageId).click();
-	document.location.hash = firstHash
-	if (document.location.hash != "") $(document.location.hash).click();
 };
 
 function menuClick(eventNav){ //клик по элементу меню
-	//выключаем все элементы
-	m = eventNav.currentTarget.id;
+	//выключаем все элементы меню
+	activeMenu = eventNav.currentTarget.id;
 	$('.values_container').css('display', 'none'); 
-	$('.nav_href').attr('href', '#'+m); //сомнительная строка
+	$('.nav_href').attr({'href': '', 'cursor': 'pointer'}); //сомнительная строка
 	$('.current').attr('class', 'label');
 
 	//Включаем тот, на котором сработало событие
-	$('#nav-label-'+m).attr('class', 'label current');
-	$('#'+m+'-container').css('display', 'block');
+	$('#nav-label-'+activeMenu).attr('class', 'label current');
+	$('#'+activeMenu+'-container').css('display', 'block');
 	$('.values_container').masonry( 'reload' );
-	$('#nav-href-'+m).attr('href', null);
-	document.location.hash = '#'+m;
-	localStorage.lastMenuItem = '#'+m;
+	$('#nav-href-'+activeMenu).attr('href', null);
+	localStorage.lastMenuItem = '#'+activeMenu;
+	var temp = $('#'+localStorage[activeMenu+'-lastField'])[0];
+	temp.value = localStorage[activeMenu+'-lastValue'];
+	$(temp).trigger('input').focus();
 };
 
 
@@ -71,7 +50,7 @@ function drawPages(){ //отрисовка страниц
 	for (var key in the_object){
 		if (typeof(the_object[key]) == "object"){
 			createMenu(key, the_object[key]['name'], the_object[key]['default'])
-			createPage(key, the_object[key]['default']);
+			createPage(key);
 			for (var key2 in the_object[key]){
 				if (typeof(the_object[key][key2]) == "object"){
 					createBlocks(key, key2, the_object[key][key2]['name']);
@@ -102,43 +81,52 @@ function drawPages(){ //отрисовка страниц
 	}
 };
 
+
+
 function createMenu(pid, pname, isDefault){ //создание элемента меню (надо переписать на jquery)
-	var navDiv = document.createElement('div');
-		navDiv.className = 'nav_item';
-		navDiv.id = pid;
-	var navHref = document.createElement('a');
-		navHref.className = 'nav_href'
-		navHref.id = 'nav-href-'+pid;
-		navHref.value = pid;
-	var iconDiv = document.createElement('div');
-		iconDiv.className = 'icon';
-		iconDiv.id = 'nav-icon-'+pid;
-	var iconImg = document.createElement('img');
-		iconImg.src = './img/nav-'+pid+'.png';
-	var labelDiv = document.createElement('div');
-		labelDiv.className = 'label';
-		labelDiv.id = 'nav-label-'+pid;
-	var textDiv = document.createElement('div');
-		textDiv.className = 'text';
-		textDiv.id = 'nav-text-'+pid;
-		textDiv.innerHTML = pname;
-	var navMenu = document.getElementsByClassName('scrollyeah__shaft')[0];
-		navMenu.appendChild(navDiv);
-		navDiv.appendChild(navHref);
-		navHref.appendChild(iconDiv);
-		navHref.appendChild(labelDiv);
-		iconDiv.appendChild(iconImg);
-		labelDiv.appendChild(textDiv);
+	var navDiv = $('<div>', {
+		id: pid,
+		class: 'nav_item'
+	});
+	var navHref = $('<a>', {
+		class: 'nav_href',
+		id: 'nav-href-'+pid,
+		value: pid
+	});
+
+	var iconDiv = $('<div>', {
+		class: 'icon',
+		id: 'nav-icon-'+pid
+	});
+
+	var iconImg = $('<img>', {
+		src: './img/nav-'+pid+'.png',
+		width: '32px',
+		height: '32px'
+	});
+	
+	var labelDiv = $('<div>', {
+		class: 'label',
+		id: 'nav-label-'+pid
+	});
+	var textDiv = $('<div>', {
+		class: 'text',
+		id: 'nav-text-'+pid,
+		html: pname
+	});
+
+		$('.scrollyeah__shaft').append(navDiv);
+		$(navDiv).append(navHref);
+		$(navHref).append(iconDiv).append(labelDiv);
+		$(iconDiv).append(iconImg);
+		$(labelDiv).append(textDiv);
 };
 
-function createPage(pid, isDefault){ //создание контейнера (надо переписать на jquery)
-	var valContainer = document.createElement('div');
+function createPage(pid){ //создание контейнера (надо переписать на jquery)
+		var valContainer = document.createElement('div');
 		valContainer.className = 'values_container';
 		valContainer.id = pid+'-container';
-		if (isDefault == false){
-			valContainer.style.display = 'none';
-		};
-	var mainContainer = document.getElementById('main-container');
+		var mainContainer = document.getElementById('main-container');
 		pagesArray.push(valContainer.id);
 		mainContainer.appendChild(valContainer);
 		pagesArray.push('#'+pid+'-container');
@@ -191,6 +179,8 @@ function digitsCorreection(field){
 			return ''
 		}
 	});
+	localStorage[activeMenu+'-lastField'] = field.id;
+	localStorage[activeMenu+'-lastValue'] = field.value;
 };
 
 function calculate(valField){
@@ -198,19 +188,17 @@ function calculate(valField){
 	var	condArray = valField.id.split('-', 3);
 	var condFactor = parseFloat(the_object[condArray[0]][condArray[1]][condArray[2]]['factor']);
 	$('#'+condArray[0]+'-container input.field').each(function(indx, domEl){
-		if (domEl.id != valField.id){
 			var resArray = domEl.id.split('-', 3);
 			var resFactor = parseFloat(the_object[resArray[0]][resArray[1]][resArray[2]]['factor'])*10000;
-			var result = "";
-			result = (currentValue*resFactor/condFactor)/100000000;
-			this.value = +result.toPrecision(7);
-		 	morphNums(this.value, this.id)
-
-		} 
+			var result = (currentValue*resFactor/condFactor)/100000000;
+			resultText = (+result.toPrecision(7)).toString();
+			resultText = resultText.split('.').join(',');
+			if (this.id != valField.id) this.value = resultText;
+		 	morphNumsRus(this.value, this.id)
 	});
 };
 
-function morphNums(val, id){
+function morphNumsRus(val, id){
 	var status = '';
 	var val = Math.abs(val);
 	if ((val-Math.floor(val) != 0) || (val.toString().charAt(val.toString().length-4)) == 'e'){
@@ -247,3 +235,14 @@ function roundTo(value, precision){
 	var precision_number = Math.pow(10, precision);
 	return Math.round(value * precision_number) / precision_number;
 };
+
+(function($) {
+  var temp = [];
+  $.imgPreload = function() {
+    for (var i = arguments.length; i--;) {
+      var currentImage = document.createElement('img');
+      currentImage.src = arguments[i];
+      temp.push(currentImage);
+    }
+  }
+})(jQuery)

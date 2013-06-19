@@ -1,9 +1,11 @@
 {
     "defaultPageId": "len",
+    "defaultFieldId": "len-england-in",
     "len": {
         "name": "Длина",
         "metric": {
-            "name": "Метрическая система",
+            "name": "Метрическая&nbsp;система",
+            "nameEnglish": "Metric",
             "km": {
                 "hidden": false,
                 "factor": "0.001",
@@ -365,7 +367,7 @@
             },
             "g": {
                 "main": true,
-                "factor": "10000000000",
+                "factor": "1000",
                 "name": {
                     "nominative_singular": "грамм",
                     "genitive_signular": "грамма",
@@ -518,7 +520,7 @@
         "name": "Передача данных"
     },
     "electricity": {
-        "name": "Электрический ток"
+        "name": "Сила тока"
     },
     "radiation": {
         "name": "Радиация"
@@ -533,7 +535,7 @@
         "name": "Валюта"
     },
     "torque": {
-        "name": "Крутящий момент"
+        "name": "Момент силы"
     },
     "footsize": {
         "name": "Размер обуви"

@@ -1,14 +1,12 @@
-
-
 /* `Basic HTML
 ----------------------------------------------------------------------------------------------------*/
 
 body {
   font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
   font-size: 14px;
-  background-image: url(../img/bg-lines.png);
+  background-image: url(../img/bg-texture.png);
   background-attachment: fixed;
-  background-color: #eee;
+  text-align: center;
 }
 
 hr {
@@ -23,7 +21,6 @@ hr {
 
 h1 {
   font-family: 'Philosopher', sans-serif;
-  color: #fff;
   padding-top: 20px;
   padding-bottom: 40px;
   text-align: center;
@@ -31,15 +28,15 @@ h1 {
   font-size: 72px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: rgba(0,0,0,0.6);
+  color: rgba(64,54,46,1);
   text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
 }
 
 h2 {
-  font-family: "HelveticaNeueUltralight", "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
-  font-weight: light;
+  font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+  font-weight: bold;
   font-size: 24px;
-  color: #000;
+  color: rgba(64,54,46,1);
   padding: 10px 20px 0px;
   text-align: center;
 }
@@ -94,8 +91,9 @@ figure {
   margin-bottom: 20px;
 }
 
-.spacing{
+.upCase{
 letter-spacing:0.25em;
+text-transform: uppercase;
 }
 
 /* `Container Params
@@ -156,19 +154,19 @@ abbr{
 
 .nav_item{
 	float: left;
-	width: 170px;
-	height: 120px;
+	width: 120px;
+	height: 70px;
 
 }
 .icon{
-	width: 170px;
-	height: 85px;
+	width: 120px;
+	height: 40px;
 }
 
 .nav_item .label{
-	border-radius: 20px 20px 0px 0px;
-	width: 170px;
-	height: 35px;
+	border-radius: 10px 10px 0px 0px;
+	width: 120px;
+	height: 30px;
 	background-color: #ddd;
 	box-shadow: 0px -2px 10px rgba(0,0,0,0.3);
 	-moz-box-shadow: 0px -2px 10px rgba(0,0,0,0.3);
@@ -180,19 +178,19 @@ abbr{
 
 .nav_item .current{
 	background-color: #eee;
-	box-shadow: 0px -7px 10px -5px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px -7px 10px -5px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0px -7px 10px -5px rgba(0,0,0,0.5);
+	box-shadow: 0px -3px 10px -5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px -3px 10px -5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px -3px 10px -5px rgba(0,0,0,0.5);
 }
 
 .nav_item .text{
 	display:inline;
 	text-decoration: none;
-	color: #44f;
-	border-bottom-color:#44f;
+	color: rgba(0, 20, 195, 1);
+	border-bottom-color: rgba(0, 20, 195, 0.6);
 	border-bottom-width: 1px;
 	border-bottom-style: dashed;
-	font-size: 18px;
+	font-size: 12px;
 	line-height: 30px;
 	font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
 	font-style: normal;
@@ -205,13 +203,13 @@ abbr{
 }
 
 .nav_item .text:hover{
-	border-bottom-color: #44f;
-	text-shadow: 0px 0px 10px rgba(255,255,255,1);
+	border-bottom-color: rgba(46,49,146,1);
+	text-shadow: rgba(0, 20, 195, 0.6);
 }
 
 .nav_item .text:visited{
-	color: #44f;
-	border-bottom-color: #44f;
+	color: rgba(0, 20, 195, 1);
+	border-bottom-color: rgba(0, 20, 195, 0.6);
 }
 
 /* Text fiels
@@ -219,9 +217,9 @@ abbr{
 
 .field{
 	font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
-	font-size: 18px; 
+	font-size: 14px; 
 	width: 107px;
-    height: 30px;
+    height: 25px;
 	background: transparent;
 	border: none;
 	text-decoration: none;
@@ -229,7 +227,6 @@ abbr{
 	margin-left: 30px;
 	color: #000;
 	cursor: pointer
-	
 }
 
 .field:focus{
@@ -242,7 +239,7 @@ abbr{
 .demension{
 	font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
 	font-size: 14px;
-	color: #888;
+	color: #000;
 }
 
 .values_block{
@@ -254,28 +251,21 @@ abbr{
 	border-radius: 10px;
 	background-color: rgba(255,255,255,0.5);
 	text-align: left;
-
 }
 
 
-
-.upper-container{
-	margin-top: 0px;
-	margin-bottom: 0px;
-	height: 50px;
-	border-radius: 0 0 20px 20px;
-	background-color: rgba(120,120,120,1);
-
-}
-
-.bottom-container{
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 15px 20px 0px;
-	height: 30px;
+.bottom_container{
+	margin: 0px 20px 0px;
+	padding: 0px 0px 0px;
+	height: 45px;
 	border-radius: 20px 20px 0px 0px;
-	background-color: rgba(120,120,120,1);
+}
 
+.upper_container{
+	margin: 0px 20px 0px;
+	padding: 0px 0px 0px;
+	height: 45px;
+	border-radius: 0px 0px 20px 20px;
 }
 
 .uppading{
@@ -294,4 +284,20 @@ abbr{
 
 .reallink:hover{
 	text-decoration:none;
+}
+
+.upper_menu{
+	padding: 15px 20px 0px;	
+	float: left;
+}
+
+.appstore{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+.langSelect{
+	text-align: right;
+	width: 90%;
 }
