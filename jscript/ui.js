@@ -22,10 +22,10 @@ $(function(){
   $('#values-container').masonry({
     // options
     itemSelector : '.values_block',
-    columnWidth : 320,
+    columnWidth : 400,
     isAnimated: true,
     animationOptions: {
-    duration: 400,
+    duration: 200,
     queue: false,
   	}
   });

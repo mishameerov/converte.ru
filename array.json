@@ -1,272 +1,93 @@
 {
     "defaultPageId": "len",
-    "defaultFieldId": "len-england-in",
+    "defaultFieldId": "len-english-inch",
     "len": {
         "name": "Длина",
         "metric": {
             "name": "Метрическая&nbsp;система",
             "nameEnglish": "Metric",
-            "km": {
-                "hidden": false,
-                "factor": "0.001",
-                "name": {
-                    "nominative_singular": "километр",
-                    "genitive_signular": "километра",
-                    "genetive_plural": "километров",
-                    "additional": null
-                }
-            },
-            "m": {
-                "hidden": false,
-                "factor": "1",
-                "name": {
-                    "nominative_singular": "метр",
-                    "genitive_signular": "метра",
-                    "genetive_plural": "метров",
-                    "additional": null
-                }
-            },
-            "dm": {
-                "hidden": false,
-                "factor": "10",
-                "name": {
-                    "nominative_singular": "дециметр",
-                    "genitive_signular": "дециметра",
-                    "genetive_plural": "дециметров",
-                    "additional": null
-                }
-            },
-            "cm": {
-                "hidden": false,
-                "factor": "100",
-                "name": {
-                    "nominative_singular": "сантиметр",
-                    "genitive_signular": "сантиметра",
-                    "genetive_plural": "сантиметров",
-                    "additional": null
-                }
-            },
-            "mm": {
-                "hidden": false,
-                "factor": "1000",
-                "name": {
-                    "nominative_singular": "миллииметр",
-                    "genitive_signular": "миллииметра",
-                    "genetive_plural": "миллиметров",
-                    "additional": null
-                }
-            },
-            "mcm": {
-                "hidden": false,
-                "factor": "1000000",
-                "name": {
-                    "nominative_singular": "микрометр",
-                    "genitive_signular": "микрометра",
-                    "genetive_plural": "микрометров",
-                    "additional": "микрон"
-                }
-            },
-            "nm": {
+            "nanometer": {
                 "hidden": false,
                 "factor": "1000000000",
                 "name": {
                     "nominative_singular": "нанометр",
                     "genitive_signular": "нанометра",
-                    "genetive_plural": "нанометров",
-                    "additional": null
+                    "genetive_plural": "нанометров"
                 }
             },
-            "am": {
+            "micrometer": {
                 "hidden": false,
-                "factor": "10000000000",
+                "factor": "1000000",
                 "name": {
-                    "nominative_singular": "ангстрем",
-                    "genitive_signular": "ангстрема",
-                    "genetive_plural": "ангстрем",
-                    "additional": null
+                    "nominative_singular": "микрометр",
+                    "genitive_signular": "микромета",
+                    "genetive_plural": "микрометров"
+                }
+            },
+            "milimeter": {
+                "hidden": false,
+                "factor": "1000",
+                "name": {
+                    "nominative_singular": "миллиметр",
+                    "genitive_signular": "миллиметра",
+                    "genetive_plural": "миллиметров"
+                }
+            },
+            "centimeter": {
+                "hidden": false,
+                "factor": "100",
+                "name": {
+                    "nominative_singular": "сантиметр",
+                    "genitive_signular": "сантиметра",
+                    "genetive_plural": "сантиметров"
+                }
+            },
+            "decimeter": {
+                "hidden": false,
+                "factor": "10",
+                "name": {
+                    "nominative_singular": "дециметр",
+                    "genitive_signular": "дециметра",
+                    "genetive_plural": "дециметров"
+                }
+            },
+            "meter": {
+                "hidden": false,
+                "factor": "1",
+                "name": {
+                    "nominative_singular": "метр",
+                    "genitive_signular": "метра",
+                    "genetive_plural": "метров"
+                }
+            },
+            "kilometer": {
+                "hidden": false,
+                "factor": "0.001",
+                "name": {
+                    "nominative_singular": "километр",
+                    "genitive_signular": "километра",
+                    "genetive_plural": " километров"
                 }
             }
         },
-        "england": {
+        "english": {
             "name": "Английская система",
-            "lg": {
-                "hidden": true,
-                "factor": "0.00020712373075",
-                "name": {
-                    "nominative_singular": "лига",
-                    "genitive_signular": "лиги",
-                    "genetive_plural": "лиг",
-                    "additional": null
-                }
-            },
             "mil": {
+                "hidden": true,
+                "factor": "39370.079",
+                "name": {
+                    "nominative_singular": "мил",
+                    "genitive_signular": "мила",
+                    "genetive_plural": "милов"
+                }
+            },
+            "line": {
                 "hidden": false,
-                "factor": "0.00062137119224",
+                "factor": "472.44094",
                 "name": {
-                    "nominative_singular": "миля",
-                    "genitive_signular": "мили",
-                    "genetive_plural": "миль",
-                    "additional": null
-                }
-            },
-            "fl": {
-                "hidden": true,
-                "factor": "0.0049709695",
-                "name": {
-                    "nominative_singular": "фарлонг",
-                    "genitive_signular": "фарлонга",
-                    "genetive_plural": "фарлонгов",
-                    "additional": null
-                }
-            },
-            "cn": {
-                "hidden": false,
-                "factor": "0.049709695",
-                "name": {
-                    "nominative_singular": "чейн",
-                    "genitive_signular": "чейна",
-                    "genetive_plural": "чейнов",
-                    "additional": null
-                }
-            },
-            "rd": {
-                "hidden": true,
-                "factor": "0.19883878",
-                "name": {
-                    "nominative_singular": "перч",
-                    "genitive_signular": "перча",
-                    "genetive_plural": "перчей",
-                    "additional": null
-                }
-            },
-            "fn": {
-                "hidden": true,
-                "factor": "0.54680665",
-                "name": {
-                    "nominative_singular": "фантом",
-                    "genitive_signular": "фантома",
-                    "genetive_plural": "фантомов",
-                    "additional": null
-                }
-            },
-            "el": {
-                "hidden": true,
-                "factor": "0.87489064",
-                "name": {
-                    "nominative_singular": "эль",
-                    "genitive_signular": "эля",
-                    "genetive_plural": "элей",
-                    "additional": null
-                }
-            },
-            "yd": {
-                "hidden": false,
-                "factor": "1.0936133",
-                "name": {
-                    "nominative_singular": "ярд",
-                    "genitive_signular": "ярда",
-                    "genetive_plural": "ярдов",
-                    "additional": null
-                }
-            },
-            "qb": {
-                "hidden": true,
-                "factor": "2.1872266",
-                "name": {
-                    "nominative_singular": "кубит",
-                    "genitive_signular": "кубита",
-                    "genetive_plural": "кубит",
-                    "additional": null
-                }
-            },
-            "ft": {
-                "hidden": false,
-                "factor": "3.2808399",
-                "name": {
-                    "nominative_singular": "фут",
-                    "genitive_signular": "фута",
-                    "genetive_plural": "футов",
-                    "additional": null
-                }
-            },
-            "sp": {
-                "hidden": true,
-                "factor": "4.3744532",
-                "name": {
-                    "nominative_singular": "спан",
-                    "genitive_signular": "спана",
-                    "genetive_plural": "спанов",
-                    "additional": null
-                }
-            },
-            "lk": {
-                "hidden": true,
-                "factor": "4.9709695",
-                "name": {
-                    "nominative_singular": "линк",
-                    "genitive_signular": "линка",
-                    "genetive_plural": "линков",
-                    "additional": null
-                }
-            },
-            "hd": {
-                "hidden": true,
-                "factor": "9.8425197",
-                "name": {
-                    "nominative_singular": "хэнд",
-                    "genitive_signular": "хэнда",
-                    "genetive_plural": "хэндов",
-                    "additional": null
-                }
-            },
-            "pl": {
-                "hidden": true,
-                "factor": "13.12336",
-                "name": {
-                    "nominative_singular": "палм",
-                    "genitive_signular": "палма",
-                    "genetive_plural": "палмов",
-                    "additional": null
-                }
-            },
-            "nl": {
-                "hidden": true,
-                "factor": "17.497813",
-                "name": {
-                    "nominative_singular": "нэйл",
-                    "genitive_signular": "нэйла",
-                    "genetive_plural": "нэйлов",
-                    "additional": null
-                }
-            },
-            "in": {
-                "hidden": false,
-                "factor": "39.370079",
-                "name": {
-                    "nominative_singular": "дюйм",
-                    "genitive_signular": "дюйма",
-                    "genetive_plural": "дюймов",
-                    "additional": null
-                }
-            },
-            "fi": {
-                "hidden": true,
-                "factor": "44.994376",
-                "name": {
-                    "nominative_singular": "фингер",
-                    "genitive_signular": "фингера",
-                    "genetive_plural": "фингеров",
-                    "additional": null
-                }
-            },
-            "dg": {
-                "hidden": true,
-                "factor": "50.075113",
-                "name": {
-                    "nominative_singular": "диджит",
-                    "genitive_signular": "диджита",
-                    "genetive_plural": "диджитов",
-                    "additional": null
+                    "nominative_singular": "лайн",
+                    "genitive_signular": "лайна",
+                    "genetive_plural": "лайнов"
                 }
             },
             "bk": {
@@ -275,31 +96,1297 @@
                 "name": {
                     "nominative_singular": "барлейкорн",
                     "genitive_signular": "барлейкорна",
-                    "genetive_plural": "барлейкорнов",
-                    "additional": null
+                    "genetive_plural": "барлейкорнов"
                 }
             },
-            "ln": {
-                "hidden": false,
-                "factor": "472.44094",
-                "name": {
-                    "nominative_singular": "лайн",
-                    "genitive_signular": "лайна",
-                    "genetive_plural": "лайнов",
-                    "additional": null
-                }
-            },
-            "ml": {
+            "digit": {
                 "hidden": true,
-                "factor": "39370.079",
+                "factor": "50.075113",
                 "name": {
-                    "nominative_singular": "мил",
-                    "genitive_signular": "мила",
-                    "genetive_plural": "милов",
-                    "additional": null
+                    "nominative_singular": "диджит",
+                    "genitive_signular": "диджита",
+                    "genetive_plural": "диджитов"
+                }
+            },
+            "finger": {
+                "hidden": true,
+                "factor": "44.994376",
+                "name": {
+                    "nominative_singular": "фингер",
+                    "genitive_signular": "фингера",
+                    "genetive_plural": "фингеров"
+                }
+            },
+            "inch": {
+                "hidden": false,
+                "factor": "39.370079",
+                "name": {
+                    "nominative_singular": "дюйм",
+                    "genitive_signular": "дюйма",
+                    "genetive_plural": "дюймов"
+                }
+            },
+            "nail": {
+                "hidden": true,
+                "factor": "17.497813",
+                "name": {
+                    "nominative_singular": "нэйл",
+                    "genitive_signular": "нэйла",
+                    "genetive_plural": "нэйлов"
+                }
+            },
+            "palm": {
+                "hidden": true,
+                "factor": "13.12336",
+                "name": {
+                    "nominative_singular": "палм",
+                    "genitive_signular": "палма",
+                    "genetive_plural": "палмов"
+                }
+            },
+            "hand": {
+                "hidden": true,
+                "factor": "9.8425197",
+                "name": {
+                    "nominative_singular": "хэнд",
+                    "genitive_signular": "хэнда",
+                    "genetive_plural": "хэндов"
+                }
+            },
+            "link": {
+                "hidden": true,
+                "factor": "4.9709695",
+                "name": {
+                    "nominative_singular": "линк",
+                    "genitive_signular": "линка",
+                    "genetive_plural": "линков"
+                }
+            },
+            "span": {
+                "hidden": true,
+                "factor": "4.3744532",
+                "name": {
+                    "nominative_singular": "спан",
+                    "genitive_signular": "спана",
+                    "genetive_plural": "спанов"
+                }
+            },
+            "foot": {
+                "hidden": false,
+                "factor": "3.2808399",
+                "name": {
+                    "nominative_singular": "фут",
+                    "genitive_signular": "фута",
+                    "genetive_plural": "футов"
+                }
+            },
+            "qb": {
+                "hidden": true,
+                "factor": "2.1872266",
+                "name": {
+                    "nominative_singular": "кубит",
+                    "genitive_signular": "кубита",
+                    "genetive_plural": "кубит"
+                }
+            },
+            "yard": {
+                "hidden": false,
+                "factor": "1.0936133",
+                "name": {
+                    "nominative_singular": "ярд",
+                    "genitive_signular": "ярда",
+                    "genetive_plural": "ярдов"
+                }
+            },
+            "el": {
+                "hidden": true,
+                "factor": "0.87489064",
+                "name": {
+                    "nominative_singular": "эль",
+                    "genitive_signular": "эля",
+                    "genetive_plural": "элей"
+                }
+            },
+            "perch": {
+                "hidden": true,
+                "factor": "0.19883878",
+                "name": {
+                    "nominative_singular": "перч",
+                    "genitive_signular": "перча",
+                    "genetive_plural": "перчей"
+                }
+            },
+            "chain": {
+                "hidden": false,
+                "factor": "0.049709695",
+                "name": {
+                    "nominative_singular": "чейн",
+                    "genitive_signular": "чейна",
+                    "genetive_plural": "чейнов"
+                }
+            },
+            "farlong": {
+                "hidden": true,
+                "factor": "0.0049709695",
+                "name": {
+                    "nominative_singular": "фурло́нг",
+                    "genitive_signular": "фурло́нга",
+                    "genetive_plural": "фурло́нгов"
+                }
+            },
+            "mile": {
+                "hidden": false,
+                "factor": "0.00062137119224",
+                "name": {
+                    "nominative_singular": "миля",
+                    "genitive_signular": "мили",
+                    "genetive_plural": "миль"
+                }
+            },
+            "lg": {
+                "hidden": true,
+                "factor": "0.00020712373075",
+                "name": {
+                    "nominative_singular": "лига",
+                    "genitive_signular": "лиги",
+                    "genetive_plural": "лиг"
+                }
+            }
+        },
+        "astro": {
+            "name": "Атрономические величины",
+            "moonradius": {
+                "hidden": true,
+                "factor": "0.0000005756720972",
+                "name": {
+                    "nominative_singular": "радиус Луны",
+                    "genitive_signular": "радиуса Луны",
+                    "genetive_plural": "радиусов Луны"
+                }
+            },
+            "earthradius": {
+                "hidden": false,
+                "factor": "0.0000001569612306",
+                "name": {
+                    "nominative_singular": "радиус Земли",
+                    "genitive_signular": "радиуса Земли",
+                    "genetive_plural": "радиусов Земли"
+                }
+            },
+            "jupiterradius": {
+                "hidden": true,
+                "factor": "0.0000000143039007",
+                "name": {
+                    "nominative_singular": "радиус Юпитера",
+                    "genitive_signular": "радиуса Юпитера",
+                    "genetive_plural": "радиусов Юпитера"
+                }
+            },
+            "lightsecond": {
+                "hidden": false,
+                "factor": "0.000000003335641",
+                "name": {
+                    "nominative_singular": "световая секунда",
+                    "genitive_signular": "световых секунды",
+                    "genetive_plural": "световых секунд"
+                }
+            },
+            "sunradius": {
+                "hidden": true,
+                "factor": "0.00000000143779385",
+                "name": {
+                    "nominative_singular": "радиус Солнца",
+                    "genitive_signular": "радиуса Солнца",
+                    "genetive_plural": "радиусов Солнца"
+                }
+            },
+            "lightminute": {
+                "hidden": true,
+                "factor": "0.000000000055594016",
+                "name": {
+                    "nominative_singular": "световая минута",
+                    "genitive_signular": "световых минуты",
+                    "genetive_plural": "световых минут"
+                }
+            },
+            "au": {
+                "hidden": false,
+                "factor": "0.0000000000066845871",
+                "name": {
+                    "nominative_singular": "а.е.",
+                    "genitive_signular": "а.е.",
+                    "genetive_plural": "а.е."
+                }
+            },
+            "lightyear": {
+                "hidden": false,
+                "factor": "1.0570234e-16",
+                "name": {
+                    "nominative_singular": "световой год",
+                    "genitive_signular": "световых года",
+                    "genetive_plural": "световых лет"
+                }
+            },
+            "parsek": {
+                "hidden": false,
+                "factor": "3.2407793e-17",
+                "name": {
+                    "nominative_singular": "парсек",
+                    "genitive_signular": "парсека",
+                    "genetive_plural": "парсек"
+                }
+            },
+            "siriometer": {
+                "hidden": true,
+                "factor": "6.6845871226706e-18",
+                "name": {
+                    "nominative_singular": "сириометр",
+                    "genitive_signular": "сириометра",
+                    "genetive_plural": "сириометров"
+                }
+            }
+        },
+        "oldRus": {
+            "name": "Страрорусские величины",
+            "volosok": {
+                "hidden": false,
+                "factor": "368593.92575928008704",
+                "name": {
+                    "nominative_singular": "волосок",
+                    "genitive_signular": "волоска",
+                    "genetive_plural": "волосков"
+                }
+            },
+            "volos": {
+                "hidden": false,
+                "factor": "23037.12035995500544",
+                "name": {
+                    "nominative_singular": "волос",
+                    "genitive_signular": "волоса",
+                    "genetive_plural": "волосов"
+                }
+            },
+            "linia": {
+                "hidden": false,
+                "factor": "1439.82002249718784",
+                "name": {
+                    "nominative_singular": "линия",
+                    "genitive_signular": "линии",
+                    "genetive_plural": "линий"
+                }
+            },
+            "nokot": {
+                "hidden": false,
+                "factor": "89.98875140607424",
+                "name": {
+                    "nominative_singular": "нокоть",
+                    "genitive_signular": "ноктя",
+                    "genetive_plural": "ноктей"
+                }
+            },
+            "vershok": {
+                "hidden": false,
+                "factor": "22.49718785151856",
+                "name": {
+                    "nominative_singular": "вершок",
+                    "genitive_signular": "вершка",
+                    "genetive_plural": "вершков"
+                }
+            },
+            "pyast": {
+                "hidden": true,
+                "factor": "11.24859392575928",
+                "name": {
+                    "nominative_singular": "пясть",
+                    "genitive_signular": "пясти",
+                    "genetive_plural": "пястей"
+                }
+            },
+            "pyad": {
+                "hidden": false,
+                "factor": "5.62429696287964",
+                "name": {
+                    "nominative_singular": "пядь",
+                    "genitive_signular": "пяди",
+                    "genetive_plural": "пядей"
+                }
+            },
+            "stopa": {
+                "hidden": false,
+                "factor": "2.81214848143982",
+                "name": {
+                    "nominative_singular": "стопа",
+                    "genitive_signular": "стопы",
+                    "genetive_plural": "стоп"
+                }
+            },
+            "lokot": {
+                "hidden": false,
+                "factor": "1.87476565429321333",
+                "name": {
+                    "nominative_singular": "локоть",
+                    "genitive_signular": "локтя",
+                    "genetive_plural": "локтей"
+                }
+            },
+            "arshin": {
+                "hidden": false,
+                "factor": "1.40607424071991",
+                "name": {
+                    "nominative_singular": "аршин",
+                    "genitive_signular": "аршина",
+                    "genetive_plural": "аршинов"
+                }
+            },
+            "shag": {
+                "hidden": false,
+                "factor": "1.124859392575928",
+                "name": {
+                    "nominative_singular": "шаг",
+                    "genitive_signular": "шага",
+                    "genetive_plural": "шагов"
+                }
+            },
+            "mera": {
+                "hidden": false,
+                "factor": "0.93738282714660667",
+                "name": {
+                    "nominative_singular": "мера",
+                    "genitive_signular": "меры",
+                    "genetive_plural": "мер"
+                }
+            },
+            "lob": {
+                "hidden": false,
+                "factor": "0.80347099469709143",
+                "name": {
+                    "nominative_singular": "лоб",
+                    "genitive_signular": "лба",
+                    "genetive_plural": "лбов"
+                }
+            },
+            "stolbets": {
+                "hidden": false,
+                "factor": "0.703037120359955",
+                "name": {
+                    "nominative_singular": "столбец",
+                    "genitive_signular": "столбца",
+                    "genetive_plural": "столбцов"
+                }
+            },
+            "malayaSajen": {
+                "hidden": true,
+                "factor": "0.702247191011236",
+                "name": {
+                    "nominative_singular": "малая сажень",
+                    "genitive_signular": "малых сажень",
+                    "genetive_plural": "малых саженей"
+                }
+            },
+            "prostayaSajen": {
+                "hidden": false,
+                "factor": "0.6631299734748011",
+                "name": {
+                    "nominative_singular": "простая сажень",
+                    "genitive_signular": "простых сажени",
+                    "genetive_plural": "простых саженей"
+                }
+            },
+            "kladSajen": {
+                "hidden": true,
+                "factor": "0.6261740763932373",
+                "name": {
+                    "nominative_singular": "кладочная сажень",
+                    "genitive_signular": "кладочных сажени",
+                    "genetive_plural": "кладочных саженей"
+                }
+            },
+            "posoh": {
+                "hidden": true,
+                "factor": "0.62492188476440444",
+                "name": {
+                    "nominative_singular": "посох",
+                    "genitive_signular": "посоха",
+                    "genetive_plural": "посохов"
+                }
+            },
+            "narodnayaSajen": {
+                "hidden": true,
+                "factor": "0.568181818181818",
+                "name": {
+                    "nominative_singular": "народная сажень",
+                    "genitive_signular": "народных сажени",
+                    "genetive_plural": "народных саженей"
+                }
+            },
+            "mahSajen": {
+                "hidden": true,
+                "factor": "0.562429696287964",
+                "name": {
+                    "nominative_singular": "маховая сажень",
+                    "genitive_signular": "маховых сажени",
+                    "genetive_plural": "маховых саженей"
+                }
+            },
+            "cerkSajen": {
+                "hidden": true,
+                "factor": "0.536480686695279",
+                "name": {
+                    "nominative_singular": "церковная сажень",
+                    "genitive_signular": "церковных сажени",
+                    "genetive_plural": "церковных саженей"
+                }
+            },
+            "trubSajen": {
+                "hidden": true,
+                "factor": "0.5347593582887701",
+                "name": {
+                    "nominative_singular": "трубная сажень",
+                    "genitive_signular": "трубных сажени",
+                    "genetive_plural": "трубных саженей"
+                }
+            },
+            "sajenBC": {
+                "hidden": true,
+                "factor": "0.5070993914807302",
+                "name": {
+                    "nominative_singular": "сажень без чети",
+                    "genitive_signular": "сажени без чети",
+                    "genetive_plural": "саженей без чети"
+                }
+            },
+            "tsarSajen": {
+                "hidden": true,
+                "factor": "0.5065856129685917",
+                "name": {
+                    "nominative_singular": "царская сажень",
+                    "genitive_signular": "царских сажени",
+                    "genetive_plural": "царских саженей"
+                }
+            },
+            "kazSajen": {
+                "hidden": false,
+                "factor": "0.46869141357330333",
+                "name": {
+                    "nominative_singular": "казенная сажень",
+                    "genitive_signular": "казенных сажени",
+                    "genetive_plural": "казенных саженей"
+                }
+            },
+            "greekSajen": {
+                "hidden": true,
+                "factor": "0.4340277777777778",
+                "name": {
+                    "nominative_singular": "греческая сажень",
+                    "genitive_signular": "греческих сажени",
+                    "genetive_plural": "греческих саженей"
+                }
+            },
+            "velikayaSajen": {
+                "hidden": true,
+                "factor": "0.4098360655737705",
+                "name": {
+                    "nominative_singular": "великая сажень",
+                    "genitive_signular": "великих сажени",
+                    "genetive_plural": "великих саженей"
+                }
+            },
+            "kosayaSajen": {
+                "hidden": true,
+                "factor": "0.4032258064516129",
+                "name": {
+                    "nominative_singular": "косая сажень",
+                    "genitive_signular": "косых сажени",
+                    "genetive_plural": "косых саженей"
+                }
+            },
+            "gorodovayaSajen": {
+                "hidden": true,
+                "factor": "0.351123595505618",
+                "name": {
+                    "nominative_singular": "городовая сажень",
+                    "genitive_signular": "городовых сажени",
+                    "genetive_plural": "городовых саженей"
+                }
+            },
+            "versta": {
+                "hidden": false,
+                "factor": "0.00093738282714661",
+                "name": {
+                    "nominative_singular": "верста",
+                    "genitive_signular": "версты",
+                    "genetive_plural": "верст"
+                }
+            },
+            "stolbVersta": {
+                "hidden": true,
+                "factor": "0.000659014923472",
+                "name": {
+                    "nominative_singular": "столбовая верста",
+                    "genitive_signular": "столбовых версты",
+                    "genetive_plural": "столбовых верст"
+                }
+            },
+            "merVersta": {
+                "hidden": true,
+                "factor": "0.0004686914135733",
+                "name": {
+                    "nominative_singular": "мерная верста",
+                    "genitive_signular": "мерных версты",
+                    "genetive_plural": "мерных верст"
+                }
+            },
+            "mile": {
+                "hidden": false,
+                "factor": "0.00013391183244952",
+                "name": {
+                    "nominative_singular": "миля",
+                    "genitive_signular": "мили",
+                    "genetive_plural": "миль"
+                }
+            },
+            "dal": {
+                "hidden": false,
+                "factor": "0.000004393432823147",
+                "name": {
+                    "nominative_singular": "даль",
+                    "genitive_signular": "дали",
+                    "genetive_plural": "далей"
+                }
+            },
+            "svetlDal": {
+                "hidden": true,
+                "factor": "0.0000000067557882",
+                "name": {
+                    "nominative_singular": "светлая даль",
+                    "genitive_signular": "светлых дали",
+                    "genetive_plural": "светлых далей"
+                }
+            },
+            "dalDal": {
+                "hidden": true,
+                "factor": "0.0000000000019302252",
+                "name": {
+                    "nominative_singular": "дальняя даль",
+                    "genitive_signular": "дальних дали",
+                    "genetive_plural": "дальних далей"
+                }
+            }
+        },
+        "japan": {
+            "name": "Японская система",
+            "mo": {
+                "hidden": false,
+                "factor": "33000",
+                "name": {
+                    "nominative_singular": "мо&nbsp;&nbsp;",
+                    "genitive_signular": "мо&nbsp;&nbsp;",
+                    "genetive_plural": "мо&nbsp;&nbsp;"
+                }
+            },
+            "rin": {
+                "hidden": false,
+                "factor": "3300",
+                "name": {
+                    "nominative_singular": "рин",
+                    "genitive_signular": "рин",
+                    "genetive_plural": "рин"
+                }
+            },
+            "bu": {
+                "hidden": false,
+                "factor": "330",
+                "name": {
+                    "nominative_singular": "бу&nbsp;&nbsp;",
+                    "genitive_signular": "бу&nbsp;&nbsp;",
+                    "genetive_plural": "бу&nbsp;&nbsp;"
+                }
+            },
+            "soon": {
+                "hidden": false,
+                "factor": "33",
+                "name": {
+                    "nominative_singular": "сун",
+                    "genitive_signular": "сун",
+                    "genetive_plural": "сун"
+                }
+            },
+            "syaku": {
+                "hidden": false,
+                "factor": "3.3",
+                "name": {
+                    "nominative_singular": "сяку",
+                    "genitive_signular": "сяку",
+                    "genetive_plural": "сяку"
+                }
+            },
+            "can": {
+                "hidden": false,
+                "factor": "0.55",
+                "name": {
+                    "nominative_singular": "кэн",
+                    "genitive_signular": "кэн",
+                    "genetive_plural": "кэн"
+                }
+            },
+            "dzyo": {
+                "hidden": false,
+                "factor": "0.33",
+                "name": {
+                    "nominative_singular": "дзё",
+                    "genitive_signular": "дзё",
+                    "genetive_plural": "дзё"
+                }
+            },
+            "tyo": {
+                "hidden": false,
+                "factor": "0.0091666667",
+                "name": {
+                    "nominative_singular": "тё&nbsp;&nbsp;",
+                    "genitive_signular": "тё&nbsp;&nbsp;",
+                    "genetive_plural": "тё&nbsp;&nbsp;"
+                }
+            },
+            "ri": {
+                "hidden": false,
+                "factor": "0.00025462963",
+                "name": {
+                    "nominative_singular": "ри&nbsp;&nbsp;",
+                    "genitive_signular": "ри&nbsp;&nbsp;",
+                    "genetive_plural": "ри&nbsp;&nbsp;"
+                }
+            }
+        },
+        "oldGreek": {
+            "name": "Древнегреческая система",
+            "daktil": {
+                "hidden": false,
+                "factor": "51.8672199170124",
+                "name": {
+                    "nominative_singular": "дактиль",
+                    "genitive_signular": "дактиля",
+                    "genetive_plural": "дактилей"
+                }
+            },
+            "kondil": {
+                "hidden": false,
+                "factor": "25.9268861809697",
+                "name": {
+                    "nominative_singular": "кондиль",
+                    "genitive_signular": "кондиля",
+                    "genetive_plural": "кондилей"
+                }
+            },
+            "palaista": {
+                "hidden": false,
+                "factor": "14.2857142857142857",
+                "name": {
+                    "nominative_singular": "палайста",
+                    "genitive_signular": "палайсты",
+                    "genetive_plural": "палайст"
+                }
+            },
+            "palestra": {
+                "hidden": false,
+                "factor": "12.9634430904848",
+                "name": {
+                    "nominative_singular": "палестра",
+                    "genitive_signular": "палестры",
+                    "genetive_plural": "палестр"
+                }
+            },
+            "dihas": {
+                "hidden": false,
+                "factor": "6.48172154524242",
+                "name": {
+                    "nominative_singular": "дихас",
+                    "genitive_signular": "дихаса",
+                    "genetive_plural": "дихасов"
+                }
+            },
+            "spitam": {
+                "hidden": false,
+                "factor": "4.32114769682828",
+                "name": {
+                    "nominative_singular": "спитам",
+                    "genitive_signular": "спитама",
+                    "genetive_plural": "спитам"
+                }
+            },
+            "pus": {
+                "hidden": false,
+                "factor": "3.2408607726212082",
+                "name": {
+                    "nominative_singular": "пус",
+                    "genitive_signular": "пуса",
+                    "genetive_plural": "пусов"
+                }
+            },
+            "shPehis": {
+                "hidden": true,
+                "factor": "2.1605738484141388",
+                "name": {
+                    "nominative_singular": "короткий пехис",
+                    "genitive_signular": "коротких пехиса",
+                    "genetive_plural": "коротких пехисов"
+                }
+            },
+            "grPehis": {
+                "hidden": false,
+                "factor": "1.6204303863106041",
+                "name": {
+                    "nominative_singular": "греческий пехис",
+                    "genitive_signular": "греческих пехиса",
+                    "genetive_plural": "греческих пехисов"
+                }
+            },
+            "bema": {
+                "hidden": false,
+                "factor": "1.2963443090484833",
+                "name": {
+                    "nominative_singular": "бема",
+                    "genitive_signular": "бемы",
+                    "genetive_plural": "бем"
+                }
+            },
+            "orgia": {
+                "hidden": false,
+                "factor": "0.5402485143165856",
+                "name": {
+                    "nominative_singular": "оргия",
+                    "genitive_signular": "оргии",
+                    "genetive_plural": "оргий"
+                }
+            },
+            "akena": {
+                "hidden": false,
+                "factor": "0.3240440699935191",
+                "name": {
+                    "nominative_singular": "акена",
+                    "genitive_signular": "акены",
+                    "genetive_plural": "акен"
+                }
+            },
+            "amma": {
+                "hidden": false,
+                "factor": "0.0540131792157286",
+                "name": {
+                    "nominative_singular": "амма",
+                    "genitive_signular": "аммы",
+                    "genetive_plural": "амм"
+                }
+            },
+            "pletr": {
+                "hidden": false,
+                "factor": "0.032258064516129",
+                "name": {
+                    "nominative_singular": "плетр",
+                    "genitive_signular": "плетра",
+                    "genetive_plural": "плетров"
+                }
+            },
+            "attStady": {
+                "hidden": true,
+                "factor": "0.00563063063063",
+                "name": {
+                    "nominative_singular": "аттический стадий",
+                    "genitive_signular": "аттических стадия",
+                    "genetive_plural": "аттических стадиев"
+                }
+            },
+            "stady": {
+                "hidden": false,
+                "factor": "0.00561797752809",
+                "name": {
+                    "nominative_singular": "стадий",
+                    "genitive_signular": "стадия",
+                    "genetive_plural": "стадиев"
+                }
+            },
+            "ptolStady": {
+                "hidden": true,
+                "factor": "0.00540540540541",
+                "name": {
+                    "nominative_singular": "птолемеевский стадий",
+                    "genitive_signular": "птолемеевских стадия",
+                    "genetive_plural": "птолемеевских стадиев"
+                }
+            },
+            "olStady": {
+                "hidden": true,
+                "factor": "0.0052010193998",
+                "name": {
+                    "nominative_singular": "олимпийский стадий",
+                    "genitive_signular": "олимпийских стадия",
+                    "genetive_plural": "олимпийских стадиев"
+                }
+            },
+            "mile": {
+                "hidden": false,
+                "factor": "0.00072033135",
+                "name": {
+                    "nominative_singular": "миля",
+                    "genitive_signular": "мили",
+                    "genetive_plural": "миль"
+                }
+            }
+        },
+        "typography": {
+            "name": "Типографские величины",
+            "twip": {
+                "hidden": false,
+                "factor": "56692.913385826",
+                "name": {
+                    "nominative_singular": "твип",
+                    "genitive_signular": "твипа",
+                    "genetive_plural": "твип"
+                }
+            },
+            "ptPostScript": {
+                "hidden": false,
+                "factor": "2834.645669291",
+                "name": {
+                    "nominative_singular": "пункт PostScript",
+                    "genitive_signular": "пункта PostScript",
+                    "genetive_plural": "пунктов PostScript"
+                }
+            },
+            "ptDido": {
+                "hidden": false,
+                "factor": "2660.28198989093",
+                "name": {
+                    "nominative_singular": "пункт Дидо",
+                    "genitive_signular": "пункта Дидо",
+                    "genetive_plural": "пунктов Дидо"
+                }
+            },
+            "ptHocus": {
+                "hidden": false,
+                "factor": "2844.95021337127",
+                "name": {
+                    "nominative_singular": "пункт Хоукса",
+                    "genitive_signular": "пункта Хоукса",
+                    "genetive_plural": "пунктов Хоукса"
+                }
+            },
+            "ptMetric": {
+                "hidden": false,
+                "factor": "2666.66666666667",
+                "name": {
+                    "nominative_singular": "метрический пункт",
+                    "genitive_signular": "метрических пункта",
+                    "genetive_plural": "метрических пунктов"
+                }
+            },
+            "ptFrunie": {
+                "hidden": false,
+                "factor": "2879.35502447452",
+                "name": {
+                    "nominative_singular": "пункт Фурнье",
+                    "genitive_signular": "пункта Фурнье",
+                    "genetive_plural": "пунктов Фурнье"
+                }
+            },
+            "cicero": {
+                "hidden": true,
+                "factor": "221.63121",
+                "name": {
+                    "nominative_singular": "цицеро",
+                    "genitive_signular": "цицеро",
+                    "genetive_plural": "цицеро"
+                }
+            }
+        },
+        "chinish": {
+            "name": "Китайские империальные единицы",
+            "li": {
+                "hidden": false,
+                "factor": "0.002",
+                "name": {
+                    "nominative_singular": "ли&nbsp;&nbsp;",
+                    "genitive_signular": "ли&nbsp;&nbsp;",
+                    "genetive_plural": "ли&nbsp;&nbsp;"
+                }
+            },
+            "uin": {
+                "hidden": false,
+                "factor": "0.03",
+                "name": {
+                    "nominative_singular": "уин",
+                    "genitive_signular": "уин",
+                    "genetive_plural": "уин"
+                }
+            },
+            "jang": {
+                "hidden": false,
+                "factor": "0.3",
+                "name": {
+                    "nominative_singular": "жанг",
+                    "genitive_signular": "жанг",
+                    "genetive_plural": "жанг"
+                }
+            },
+            "bu": {
+                "hidden": false,
+                "factor": "0.6",
+                "name": {
+                    "nominative_singular": "бу&nbsp;&nbsp;",
+                    "genitive_signular": "бу&nbsp;&nbsp;",
+                    "genetive_plural": "бу&nbsp;&nbsp;"
+                }
+            },
+            "chi": {
+                "hidden": false,
+                "factor": "3",
+                "name": {
+                    "nominative_singular": "чи&nbsp;&nbsp;",
+                    "genitive_signular": "чи&nbsp;&nbsp;",
+                    "genetive_plural": "чи&nbsp;&nbsp;"
+                }
+            },
+            "kan": {
+                "hidden": false,
+                "factor": "30",
+                "name": {
+                    "nominative_singular": "кан",
+                    "genitive_signular": "кан",
+                    "genetive_plural": "кан"
+                }
+            },
+            "fen": {
+                "hidden": false,
+                "factor": "300",
+                "name": {
+                    "nominative_singular": "фен",
+                    "genitive_signular": "фен",
+                    "genetive_plural": "фен"
+                }
+            },
+            "littleLi": {
+                "hidden": false,
+                "factor": "3000",
+                "name": {
+                    "nominative_singular": "малое ли",
+                    "genitive_signular": "малого ли",
+                    "genetive_plural": "малых ли"
+                }
+            },
+            "hao": {
+                "hidden": false,
+                "factor": "30000",
+                "name": {
+                    "nominative_singular": "хао",
+                    "genitive_signular": "хао",
+                    "genetive_plural": "хао"
+                }
+            },
+            "si": {
+                "hidden": false,
+                "factor": "300000",
+                "name": {
+                    "nominative_singular": "си&nbsp;&nbsp;",
+                    "genitive_signular": "си&nbsp;&nbsp;",
+                    "genetive_plural": "си&nbsp;&nbsp;"
+                }
+            },
+            "hu": {
+                "hidden": false,
+                "factor": "3000000",
+                "name": {
+                    "nominative_singular": "ху&nbsp;&nbsp;",
+                    "genitive_signular": "ху&nbsp;&nbsp;",
+                    "genetive_plural": "ху&nbsp;&nbsp;"
+                }
+            }
+        },
+        "oldFrench": {
+            "name": "Старые французские единицы",
+            "lieComunne": {
+                "hidden": false,
+                "factor": "0.00022497187852",
+                "name": {
+                    "nominative_singular": "сухопутное льё",
+                    "genitive_signular": "сухопутных льё",
+                    "genetive_plural": "сухопутных льё"
+                }
+            },
+            "lieMarine": {
+                "hidden": false,
+                "factor": "0.00017995321216",
+                "name": {
+                    "nominative_singular": "морское льё",
+                    "genitive_signular": "морских льё",
+                    "genetive_plural": "морских льё"
+                }
+            },
+            "lieDePost": {
+                "hidden": false,
+                "factor": "0.00025654181632",
+                "name": {
+                    "nominative_singular": "почтовое льё",
+                    "genitive_signular": "почтовых льё",
+                    "genetive_plural": "почтовых льё"
+                }
+            },
+            "lieMetric": {
+                "hidden": false,
+                "factor": "0.00025",
+                "name": {
+                    "nominative_singular": "метрическое льё",
+                    "genitive_signular": "метрических льё",
+                    "genetive_plural": "метрических льё"
+                }
+            },
+            "arpan": {
+                "hidden": false,
+                "factor": "0.017102437",
+                "name": {
+                    "nominative_singular": "арпан",
+                    "genitive_signular": "арпана",
+                    "genetive_plural": "арпанов"
+                }
+            },
+            "persh": {
+                "hidden": false,
+                "factor": "0.17102437",
+                "name": {
+                    "nominative_singular": "перш",
+                    "genitive_signular": "перша",
+                    "genetive_plural": "першей"
+                }
+            },
+            "tuas": {
+                "hidden": false,
+                "factor": "0.51308363263212",
+                "name": {
+                    "nominative_singular": "туаз",
+                    "genitive_signular": "туаза",
+                    "genetive_plural": "туазов"
+                }
+            },
+            "pie": {
+                "hidden": false,
+                "factor": "3.0784386",
+                "name": {
+                    "nominative_singular": "пье",
+                    "genitive_signular": "пье",
+                    "genetive_plural": "пье"
+                }
+            },
+            "pus": {
+                "hidden": false,
+                "factor": "36.941263",
+                "name": {
+                    "nominative_singular": "пус",
+                    "genitive_signular": "пуса",
+                    "genetive_plural": "пусов"
+                }
+            },
+            "lin": {
+                "hidden": false,
+                "factor": "443.29516",
+                "name": {
+                    "nominative_singular": "линь",
+                    "genitive_signular": "линь",
+                    "genetive_plural": "линь"
+                }
+            }
+        },
+        "oldSpanish": {
+            "name": "Старые испанские и португальские единицы",
+            "lg": {
+                "hidden": false,
+                "factor": "0.00023926307",
+                "name": {
+                    "nominative_singular": "лига",
+                    "genitive_signular": "лиги",
+                    "genetive_plural": "лиг"
+                }
+            },
+            "paso": {
+                "hidden": false,
+                "factor": "0.71778921",
+                "name": {
+                    "nominative_singular": "пасо",
+                    "genitive_signular": "пасо",
+                    "genetive_plural": "пасо"
+                }
+            },
+            "vara": {
+                "hidden": false,
+                "factor": "1.1963153",
+                "name": {
+                    "nominative_singular": "вара",
+                    "genitive_signular": "вара",
+                    "genetive_plural": "вара"
+                }
+            },
+            "pie": {
+                "hidden": false,
+                "factor": "3.588946",
+                "name": {
+                    "nominative_singular": "пье",
+                    "genitive_signular": "пье",
+                    "genetive_plural": "пье"
+                }
+            },
+            "pulgada": {
+                "hidden": false,
+                "factor": "43.067353",
+                "name": {
+                    "nominative_singular": "пульгада",
+                    "genitive_signular": "пульгада",
+                    "genetive_plural": "пульгада"
+                }
+            },
+            "linea": {
+                "hidden": false,
+                "factor": "516.80823",
+                "name": {
+                    "nominative_singular": "линеа",
+                    "genitive_signular": "линеа",
+                    "genetive_plural": "линеа"
+                }
+            },
+            "punto": {
+                "hidden": false,
+                "factor": "6201.6988",
+                "name": {
+                    "nominative_singular": "пунто",
+                    "genitive_signular": "пунто",
+                    "genetive_plural": "пунто"
+                }
+            }
+        },
+        "oldRoman": {
+            "name": "Древнеримские единицы",
+            "millari": {
+                "hidden": false,
+                "factor": "0.00062593891",
+                "name": {
+                    "nominative_singular": "милларий",
+                    "genitive_signular": "миллария",
+                    "genetive_plural": "миллариев"
+                }
+            },
+            "act": {
+                "hidden": false,
+                "factor": "0.026080788",
+                "name": {
+                    "nominative_singular": "акт",
+                    "genitive_signular": "акта",
+                    "genetive_plural": "актов"
+                }
+            },
+            "decimpeda": {
+                "hidden": false,
+                "factor": "0.31296945",
+                "name": {
+                    "nominative_singular": "децимпеда",
+                    "genitive_signular": "децимпеды",
+                    "genetive_plural": "децимпед"
+                }
+            },
+            "pass": {
+                "hidden": false,
+                "factor": "0.62593891",
+                "name": {
+                    "nominative_singular": "пасс",
+                    "genitive_signular": "пасса",
+                    "genetive_plural": "пассов"
+                }
+            },
+            "qb": {
+                "hidden": false,
+                "factor": "2.086463",
+                "name": {
+                    "nominative_singular": "кубит",
+                    "genitive_signular": "кубита",
+                    "genetive_plural": "кубит"
+                }
+            },
+            "pedLegal": {
+                "hidden": false,
+                "factor": "3.756574",
+                "name": {
+                    "nominative_singular": "пед легальный",
+                    "genitive_signular": "легальных педа",
+                    "genetive_plural": "легальных педов"
+                }
+            },
+            "pedOrdinar": {
+                "hidden": false,
+                "factor": "3.1296945",
+                "name": {
+                    "nominative_singular": "пед обыкновенный",
+                    "genitive_signular": "обыкновенных педа",
+                    "genetive_plural": "обыкновенных педов"
+                }
+            },
+            "ounz": {
+                "hidden": false,
+                "factor": "37.556335",
+                "name": {
+                    "nominative_singular": "унция",
+                    "genitive_signular": "унции",
+                    "genetive_plural": "унций"
+                }
+            },
+            "digit": {
+                "hidden": false,
+                "factor": "50.075113",
+                "name": {
+                    "nominative_singular": "дигит",
+                    "genitive_signular": "дигита",
+                    "genetive_plural": "дигитов"
+                }
+            }
+        },
+        "marine": {
+            "name": "Единицы, применяемые в морском деле",
+            "nMileUK": {
+                "hidden": false,
+                "factor": "0.00053959086063",
+                "name": {
+                    "nominative_singular": "миля Британии",
+                    "genitive_signular": "мили Британии",
+                    "genetive_plural": "миль Британии"
+                }
+            },
+            "nMileUS": {
+                "hidden": false,
+                "factor": "0.00053995680346",
+                "name": {
+                    "nominative_singular": "миля США",
+                    "genitive_signular": "мили США",
+                    "genetive_plural": "миль США"
+                }
+            }
+        },
+        "sience": {
+            "name": "Единицы, применяемые в физике",
+            "angstrom": {
+                "hidden": true,
+                "factor": "10000000000",
+                "name": {
+                    "nominative_singular": "а́нгстрем",
+                    "genitive_signular": "а́нгстрема",
+                    "genetive_plural": "а́нгстрем"
                 }
             }
         }
+    },
+    "currency": {
+        "name": "Валюта"
+    },
+    "temperature": {
+        "name": "Температура"
+    },
+    "area": {
+        "name": "Площадь"
+    },
+    "volume": {
+        "name": "Объем"
     },
     "weight": {
         "name": "Вес",
@@ -480,17 +1567,8 @@
             }
         }
     },
-    "volume": {
-        "name": "Объем"
-    },
-    "area": {
-        "name": "Площадь"
-    },
     "speed": {
         "name": "Скорость"
-    },
-    "temperature": {
-        "name": "Температура"
     },
     "time": {
         "name": "Время"
@@ -530,9 +1608,6 @@
     },
     "frequency": {
         "name": "Частота"
-    },
-    "currency": {
-        "name": "Валюта"
     },
     "torque": {
         "name": "Момент силы"
